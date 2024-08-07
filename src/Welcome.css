@@ -1,0 +1,64 @@
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.introduction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    background: #000;
+}
+
+.introduction-grid div {
+    text-align: center;
+    background: #fff;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.introduction-grid span {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    opacity: 0.1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto auto auto auto;
+}
+
+.goal {
+    background-image: url("../media/goal.svg");
+}
+
+.health {
+    background-image: url("../media/health.svg");
+}
+
+.hourglass {
+    background-image: url("../media/hourglass.svg");
+}
+
+.plan {
+    background-image: url("../media/plan.svg");
+}
+
