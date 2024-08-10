@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Cambria', 'Georgia', 'Times New Roman', sans-serif;
+  font-family: 'Abel', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e8e8e8;
 }
 
 code {

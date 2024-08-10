@@ -22,8 +22,11 @@ let paragraph1 = `I’m 110% passionate about helping my clients achieve their g
 function Welcome() {
     return (
         <div className="welcome">
+            <div className="logo-container">
+                <span className="logo"/>
+            </div>
             <div className="welcome-title">
-                Welcome to Passion for Fitness NZ!
+                WELCOME TO PASSION FOR FITNESS NZ!
             </div>
             <div className="introduction-grid">
                 <div>
