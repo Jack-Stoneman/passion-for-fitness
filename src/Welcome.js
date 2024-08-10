@@ -1,4 +1,6 @@
 import './Welcome.css'
+import { InlineWidget } from "react-calendly";
+
 
 let paragraph1 = `I’m 110% passionate about helping my clients achieve their goals and feeling more fit and
         comfortable in their own bodies. Whether your goal is weight loss, muscle growth, strength,
@@ -46,6 +48,10 @@ function Welcome() {
                     {paragraph4}
                 </div>
             </div>
+            <InlineWidget url="https://calendly.com/jestoneman"
+                pageSettings={{
+                    backgroundColor: '#e8e8e8'
+                }}/>
         </div>
     )
 }
