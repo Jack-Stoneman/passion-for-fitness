@@ -1,7 +1,7 @@
 .welcome {
-    width: 100vw;
+    padding-top: 80px;
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -34,6 +34,7 @@
     font-weight: 600;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-style: italic;
 }
 
 .introduction-grid {
@@ -50,12 +51,20 @@
 
 .introduction-grid .grid-wrapper div {
     text-align: center;
-    padding: 9px;
+    padding: 20px;
     display: flex;
     align-items: center;
     position: relative;
     font-size: 17px;
     flex-direction: column;
+}
+
+.introduction-grid .grid-wrapper:not(:first-of-type) {
+    border-left: 1px solid white;
+}
+
+.introduction-grid .grid-wrapper div:not(:first-of-type) {
+    border-left: 1px solid white;
 }
 
 .introduction-grid span {
