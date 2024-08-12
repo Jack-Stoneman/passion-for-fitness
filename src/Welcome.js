@@ -31,27 +31,31 @@ function Welcome() {
                 WELCOME TO PASSION FOR FITNESS NZ!
             </div>
             <div className="introduction-grid">
-                <div>
-                    <span className="goal"/>
-                    {paragraph1}
+                <div className="grid-wrapper">
+                    <div>
+                        {/* <span className="goal"/> */}
+                        {paragraph1}
+                    </div>
+                    <div>
+                        {/* <span className="plan"/> */}
+                        {paragraph2}
+                    </div>
                 </div>
-                <div>
-                    <span className="plan"/>
-                    {paragraph2}
-                </div>
-                <div>
-                    <span className="hourglass"/>
-                    {paragraph3}
-                </div>
-                <div>
-                    <span className="health"/>
-                    {paragraph4}
+                <div className="grid-wrapper">
+                    <div>
+                        {/* <span className="hourglass"/> */}
+                        {paragraph3}
+                    </div>
+                    <div>
+                        {/* <span className="health"/> */}
+                        {paragraph4}
+                    </div>
                 </div>
             </div>
-            <InlineWidget url="https://calendly.com/jestoneman"
+            {/* <InlineWidget url="https://calendly.com/jestoneman"
                 pageSettings={{
                     backgroundColor: '#e8e8e8'
-                }}/>
+                }}/> */}
         </div>
     )
 }

@@ -1,11 +1,18 @@
 .welcome {
     width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    color: #fff;
+    background: hsla(208, 100%, 43%, 1);
+    background: linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0074D9", endColorstr="#002E57", GradientType=1 );
 }
 
 .logo-container {
@@ -15,6 +22,8 @@
 .logo {
     background-image: url("../media/logo.svg");
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 150px;
     height: 150px;
     display: block;
@@ -29,31 +38,35 @@
 
 .introduction-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.introduction-grid div {
+.introduction-grid .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.introduction-grid .grid-wrapper div {
     text-align: center;
     padding: 9px;
     display: flex;
     align-items: center;
     position: relative;
     font-size: 17px;
+    flex-direction: column;
 }
 
 .introduction-grid span {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    opacity: 0.1;
+    display: block;
+    width: 50px;
+    height: 50px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin: auto auto auto auto;
+    margin-bottom: 10px;
+    filter: invert(1);
 }
 
 .goal {
