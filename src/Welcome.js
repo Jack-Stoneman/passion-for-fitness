@@ -1,5 +1,4 @@
 import './Welcome.css'
-import { InlineWidget } from "react-calendly";
 
 
 let paragraph1 = `I’m 110% passionate about helping my clients achieve their goals and feeling more fit and
@@ -23,7 +22,8 @@ let paragraph1 = `I’m 110% passionate about helping my clients achieve their g
 
 function Welcome() {
     return (
-        <div className="welcome">
+        <div id="welcome">
+            <div className="overlay"></div>
             <div className="logo-container">
                 <span className="logo"/>
             </div>
@@ -38,16 +38,19 @@ function Welcome() {
                     </div>
                     <div>
                         {/* <span className="plan"/> */}
+                        <span className="separator"/>
                         {paragraph2}
                     </div>
                 </div>
                 <div className="grid-wrapper">
                     <div>
                         {/* <span className="hourglass"/> */}
+                        <span className="separator"/>
                         {paragraph3}
                     </div>
                     <div>
                         {/* <span className="health"/> */}
+                        <span className="separator"/>
                         {paragraph4}
                     </div>
                 </div>

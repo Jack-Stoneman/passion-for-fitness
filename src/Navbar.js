@@ -8,8 +8,8 @@ function Navbar() {
                     Passion For Fitness NZ
                 </div>
                 <div className="navbar-links">
-                    <a>Welcome</a>
-                    <a>Contact</a>
+                    <a href="#welcome">Welcome</a>
+                    <a href="#calendar">Contact</a>
                     <a>About Me</a>
                     <a>My Process</a>
                 </div>

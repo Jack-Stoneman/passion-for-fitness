@@ -3,10 +3,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 80px;
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 
 .inner-wrapper {
@@ -29,4 +30,10 @@
     display: grid;
     grid-auto-flow: column;
     column-gap: 15px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
