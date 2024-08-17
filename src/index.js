@@ -4,6 +4,7 @@ import './index.css';
 import Welcome from './Welcome';
 import Navbar from './Navbar';
 import Calendar from './Calendar';
+import Process from './Process';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,5 +12,6 @@ root.render(
     <Navbar />
     <Welcome />
     <Calendar />
+    <Process />
   </React.StrictMode>
 );

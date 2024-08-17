@@ -8,19 +8,16 @@
     margin-right: auto;
     color: #fff;
     background:
+        linear-gradient(
+            0deg, rgba(255,255,255,1) 0%,
+            rgba(255,255,255,0.4) 15%,
+            rgba(255,255,255,0.25) 20%,
+            rgba(255,255,255,0) 50%,
+            rgba(255,255,255,0) 100%
+        ),
         linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
     padding-bottom: 200px;
     position: relative;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 20%, rgba(255,255,255,0) 100%);
 }
 
 .logo-container {
@@ -47,14 +44,14 @@
 
 .introduction-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .introduction-grid .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .introduction-grid .grid-wrapper div {
@@ -67,20 +64,14 @@
     flex-direction: column;
 }
 
-.introduction-grid .grid-wrapper:not(:first-of-type) {
-    /* border-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+.introduction-grid .grid-wrapper div:not(:first-of-type) {
     border-left-width: 1px;
-    border-left-style: solid; */
+    border-left-style: solid; 
 }
 
-.introduction-grid .grid-wrapper div {
-    -webkit-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    margin: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
+.introduction-grid .grid-wrapper:not(:first-of-type) {
+    border-left-width: 1px;
+    border-left-style: solid; 
 }
 
 /* .introduction-grid span {

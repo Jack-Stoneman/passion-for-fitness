@@ -23,7 +23,6 @@ let paragraph1 = `I’m 110% passionate about helping my clients achieve their g
 function Welcome() {
     return (
         <div id="welcome">
-            <div className="overlay"></div>
             <div className="logo-container">
                 <span className="logo"/>
             </div>
