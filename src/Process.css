@@ -19,8 +19,59 @@
     padding-bottom: 200px;
 }
 
+.carousel {
+    position: relative;
+}
+
 .slides {
     width: 200px;
     height: 200px;
     background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: left ease-in;
+}
+
+.slides .slide:nth-child(1) {
+    background: red;
+}
+.slides .slide:nth-child(2) {
+    background: blue;
+}
+.slides .slide:nth-child(3) {
+    background: green;
+}
+.slides .slide:nth-child(4) {
+    background: yellow;
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    top: calc(50% - 15px);
+    background-color: rgba(0,0,0,0.2);
+    background-image: url("../media/arrow.svg");
+    background-position: calc(50% + 2px) 50%;;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.arrow.prev {
+    left: 0;
+    right: auto;
+    transform: rotate(180deg);
 }
