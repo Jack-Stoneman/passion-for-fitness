@@ -1,22 +1,12 @@
 #process {
-    padding-top: 80px;
+    padding: 50px 0px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    color: #fff;
-    background:
-        linear-gradient(
-            180deg, rgba(255,255,255,1) 0%,
-            rgba(255,255,255,0.4) 15%,
-            rgba(255,255,255,0.25) 20%,
-            rgba(255,255,255,0) 50%,
-            rgba(255,255,255,0) 100%
-        ),
-        linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
-    padding-bottom: 200px;
+    background: #fff;
 }
 
 .carousel {
@@ -24,8 +14,8 @@
 }
 
 .slides {
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
     background: white;
     position: relative;
     overflow: hidden;
@@ -34,44 +24,24 @@
 .slides .slide {
     position: absolute;
     top: 0;
-    left: 0;
     bottom: 0;
     width: 100%;
-    transition: left ease-in;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slides .slide:nth-child(1) {
+    left: 0;
     background: red;
 }
 .slides .slide:nth-child(2) {
+    left: 100%;
     background: blue;
 }
 .slides .slide:nth-child(3) {
+    left: 200%;
     background: green;
 }
 .slides .slide:nth-child(4) {
+    left: 300%;
     background: yellow;
-}
-
-.arrow {
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 0px;
-    top: calc(50% - 15px);
-    background-color: rgba(0,0,0,0.2);
-    background-image: url("../media/arrow.svg");
-    background-position: calc(50% + 2px) 50%;;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.arrow.prev {
-    left: 0;
-    right: auto;
-    transform: rotate(180deg);
 }

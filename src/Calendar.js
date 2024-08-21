@@ -7,7 +7,7 @@ function Calendar() {
         <div id="calendar">
             <div className="calendar-content-wrapper">
                 <div className="calendar-paragraph">
-                    <div className="calendar-title">BOOK A CALL</div>
+                    <div className="calendar-title section-header">BOOK A CALL</div>
                     <div className="calendar-text">
                         Feel free to book a call and we can discuss the next steps in
                         your fitness journey.
