@@ -11,6 +11,7 @@
 
 .carousel {
     position: relative;
+    max-width: 95%
 }
 
 .slides {
@@ -19,6 +20,7 @@
     background: white;
     position: relative;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .slides .slide {

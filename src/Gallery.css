@@ -28,7 +28,8 @@
     width: 1000px;
     overflow: hidden;
     border-radius: 15px;
-    max-width: 95%;
+    max-width: 75%;
+    aspect-ratio: 16/9;
   }
   
   .gallery-slides {

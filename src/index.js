@@ -19,9 +19,9 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Welcome />
-    <About />
-    <Benefits />
     <Process />
+    <Benefits />
+    <About />
     <Gallery images={images} interval={3000} />
     <Calendar />
   </React.StrictMode>
