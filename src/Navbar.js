@@ -8,7 +8,7 @@ function Navbar() {
         <div className="navbar-links">
           <a href="#welcome">Welcome</a>
           <a href="#calendar">Contact</a>
-          <a>About Me</a>
+          <a href="#about">About Me</a>
           <a href="#process">My Process</a>
         </div>
       </div>
