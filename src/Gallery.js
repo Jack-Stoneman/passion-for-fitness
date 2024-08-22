@@ -51,7 +51,7 @@ const Gallery = ({ images, interval = 3000 }) => {
                 index === currentIndex ? "active" : ""
               }`}
             >
-              <img src={image} alt={`Slide ${index + 1}`} />
+              <img loading="lazy" src={image} alt={`Slide ${index + 1}`} />
             </div>
           ))}
         </div>

@@ -1,10 +1,9 @@
 #calendar {
     width: 100%;
-    height: 800px;
     display: flex;
     flex-direction: column;
     background: #fff;
-    padding-top: 90px;
+    padding: 50px 0px;
 }
 
 .calendar-content-wrapper {
@@ -31,6 +30,6 @@
 
 .calendly-wrapper {
     width: 600px;
-    height: 500px;
+    height: 630px;
     max-width: 100%;
 }
