@@ -1,11 +1,61 @@
+html {
+  scroll-padding-top: 80px;
+}
+
 body {
   margin: 0;
-  font-family: 'Cambria', 'Georgia', 'Times New Roman', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e8e8e8;
+  box-sizing: border-box;
+  --central-blue: #0074d9;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.section {
+  padding: 50px 0px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.blue {
+  background: linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
+  color: #fff;
+}
+
+.section-header {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0px;
+  top: calc(50% - 15px);
+  background-color: rgba(0,0,0,0.4);
+  background-image: url("../media/arrow.svg");
+  background-position: calc(50% + 2px) 50%;;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow.prev {
+  left: 0;
+  right: auto;
+  transform: rotate(180deg) translateX(-50%);
 }
