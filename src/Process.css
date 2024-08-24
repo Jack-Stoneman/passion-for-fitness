@@ -21,6 +21,12 @@
     position: relative;
     overflow: hidden;
     max-width: 100%;
+    transition: width 0.5 ease-in-out
+}
+
+.slides.expand {
+    width: 95vw;
+    height: 580px;
 }
 
 .slides .slide {

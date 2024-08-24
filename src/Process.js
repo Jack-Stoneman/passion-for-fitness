@@ -1,6 +1,7 @@
 import "./Process.css";
 import { useState } from "react";
 import { useTransition } from "react";
+import Plan from "./Plan";
 
 function Process() {
   const [slide, setSlide] = useState(0);
@@ -27,7 +28,7 @@ function Process() {
       <div className="carousel">
         <span className="arrow" onClick={nextSlide} />
         <span className="arrow prev" onClick={prevSlide} />
-        <div className="slides">
+        <div className={"slides" + (slide == 4 ? " expand" : "")}>
           <div
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
@@ -79,6 +80,7 @@ function Process() {
               You will come away from this step with a personalised workout plan
               that I will write for you. Below is an example of how it might
               look.
+              <Plan />
             </div>
           </div>
         </div>
