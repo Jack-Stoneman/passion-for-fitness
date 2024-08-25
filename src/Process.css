@@ -21,7 +21,7 @@
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    transition: height0.5 ease-in-out
+    transition: height 0.5 ease-in-out
 }
 
 .slides.expand {

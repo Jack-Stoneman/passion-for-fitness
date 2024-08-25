@@ -3,6 +3,7 @@ import "./Plan.css";
 function PlanTwo() {
   return (
     <div id="plan_two">
+      <div className="cell bold header">Passion for Fitness NZ</div>
       <div className="cell bold half">
         Resistance Training Programme for: <span>Jane Brown</span>
       </div>

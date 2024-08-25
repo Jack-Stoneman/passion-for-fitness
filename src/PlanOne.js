@@ -3,6 +3,7 @@ import "./Plan.css";
 function PlanOne() {
   return (
     <div id="plan">
+      <div className="cell bold header">Passion for Fitness NZ</div>
       <div className="cell bold">Four-week goal</div>
       <div className="cell goal">
         Maintain running time at 20 minutes continuous running; moderate
