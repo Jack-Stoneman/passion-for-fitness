@@ -1,6 +1,6 @@
 import "./Plan.css";
 
-function Plan() {
+function PlanOne() {
   return (
     <div id="plan">
       <div className="cell bold">Four-week goal</div>
@@ -103,4 +103,4 @@ function Plan() {
   );
 }
 
-export default Plan;
+export default PlanOne;

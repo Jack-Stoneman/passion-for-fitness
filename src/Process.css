@@ -15,17 +15,16 @@
 }
 
 .slides {
-    width: 1000px;
+    width: 1080px;
     height: 300px;
     background: white;
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    transition: width 0.5 ease-in-out
+    transition: height0.5 ease-in-out
 }
 
 .slides.expand {
-    width: 95vw;
     height: 580px;
 }
 
@@ -52,6 +51,12 @@
 }
 .slides .slide:nth-child(5) {
     left: 400%;
+}
+.slides .slide:nth-child(6) {
+    left: 500%;
+}
+.slides .slide:nth-child(7) {
+    left: 600%;
 }
 
 .slide-header {

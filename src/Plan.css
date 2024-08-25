@@ -1,12 +1,19 @@
-#plan {
+#plan, #plan_two {
     display: grid;
+    height: 500px;
     grid-template-columns: 2fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     grid-template-rows: 2fr 1fr 2fr 1fr repeat(6, 2fr);
-    height: 500px;
     width: 1000px;
     border: 0.5px solid #000;
     font-size: 14px;
     margin-top: 20px;
+}
+
+#plan_two {
+    grid-template-columns: 1fr 4fr repeat(8, 1fr) 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr repeat(4, 2fr) 1fr 2fr 2fr;
+    height: 505px;
+    font-size: 12px;
 }
 
 .cell {
@@ -16,6 +23,9 @@
 
 .bold {
     font-weight: 700;
+}
+.bold span {
+    font-weight: 400;
 }
 
 .goal {
@@ -28,4 +38,30 @@
 
 .centre {
     text-align: center;
+}
+
+.half {
+    grid-column-start: span 6;
+}
+
+.start {
+    grid-column-start: span 3;
+    border-right: none;
+}
+
+.end {
+    grid-column-start: span 3;
+    border-left: none;
+}
+
+.warmup {
+    grid-column-start: span 10;
+}
+
+.cardio {
+    grid-column-start: span 9;
+}
+
+.treadmill {
+    grid-column-start: span 4;
 }
