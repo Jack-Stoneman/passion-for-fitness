@@ -29,7 +29,7 @@ function Welcome() {
       <div className="logo-container">
         <span className="logo" />
       </div>
-      <div className="welcome-title">YOUR JOURNEY, MY PASSION.</div>
+      <div className="welcome-title">Your Journey, My Passion.</div>
       <div className="welcome-subtitle">Welcome to Passion for Fitness NZ!</div>
       <div className="welcome-message">
         If you’re looking for customised training plans, exercise selection and

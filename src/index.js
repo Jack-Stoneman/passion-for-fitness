@@ -11,6 +11,7 @@ import galleryTwo from "./assets/gallery-2.jpg";
 import galleryThree from "./assets/gallery-3.jpg";
 import About from "./About";
 import Benefits from "./Benefits";
+import Contact from "./Contact";
 
 const images = [galleryOne, galleryTwo, galleryThree];
 
@@ -24,5 +25,6 @@ root.render(
     <About />
     <Gallery images={images} interval={3000} />
     <Calendar />
+    <Contact />
   </React.StrictMode>
 );
