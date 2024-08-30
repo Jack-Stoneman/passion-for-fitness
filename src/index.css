@@ -8,12 +8,15 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e8e8e8;
   box-sizing: border-box;
   
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
 }
 
 code {

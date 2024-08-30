@@ -42,35 +42,45 @@ function Contact() {
     <div id="contact" className="section blue">
       <div className="section-header">ENQUIRE NOW</div>
       <div className="contact-form">
-        <div className="contact-form-title">Get in touch</div>
         <div className="form-wrapper">
           <form ref={form} onSubmit={sendEmail}>
+            <label for="user_name">Name</label>
             <input
               type="text"
               name="user_name"
-              placeholder="Your name"
+              placeholder="Enter your name"
               required
             />
+            <label for="user_email">Email</label>
             <input
               type="email"
               name="user_email"
-              placeholder="Your email"
+              placeholder="Enter your email"
               required
             />
+            <label for="user_gender">Gender</label>
             <input
               type="text"
               name="user_gender"
               placeholder="Your gender"
               required
             />
+            <label for="user_phone">Phone</label>
             <input
               type="text"
               name="user_phone"
-              placeholder="Your phone"
+              placeholder="Enter your phone number"
               required
             />
-            <textarea name="message" placeholder="Message" required />
-            <input className="button purple" type="submit" value="Send" />
+            <label for="message">What is your question?</label>
+            <textarea
+              name="message"
+              placeholder="Enter your question"
+              required
+            />
+            <button className="submit-button" type="submit">
+              Send
+            </button>
           </form>
         </div>
       </div>
