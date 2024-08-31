@@ -16,7 +16,7 @@
             rgba(255,255,255,0) 100%
         ), */
         linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
-    padding: 100px 0px;
+    padding: 60px 0px 50px;
     position: relative;
 }
 
@@ -38,8 +38,22 @@
     font-size: 42px;
     font-weight: 600;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-style: italic;
+}
+
+.welcome-subtitle {
+    font-size: 38px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.welcome-message {
+    font-size: 24px;
+    max-width: 800px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 25px;
 }
 
 .introduction-grid {
@@ -64,7 +78,7 @@
     flex-direction: column;
 }
 
-.introduction-grid .grid-wrapper div:not(:first-of-type) {
+/* .introduction-grid .grid-wrapper div:not(:first-of-type) {
     border-left-width: 1px;
     border-left-style: solid; 
 }
@@ -72,6 +86,23 @@
 .introduction-grid .grid-wrapper:not(:first-of-type) {
     border-left-width: 1px;
     border-left-style: solid; 
+} */
+
+.welcome-icon {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 15px;
+}
+
+.welcome-icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.introduction-grid .grid-wrapper div.subsection-header {
+    font-size: 20px;
+    font-weight: 600
 }
 
 /* .introduction-grid span {

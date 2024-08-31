@@ -7,7 +7,7 @@ import PlanTwo from "./PlanTwo";
 function Process() {
   const [slide, setSlide] = useState(0);
   const [isPending, startTransition] = useTransition();
-  const slideCount = 7;
+  const slideCount = 5;
 
   const nextSlide = () => {
     startTransition(() => setSlide((slide + 1) % slideCount));
@@ -29,7 +29,7 @@ function Process() {
       <div className="carousel">
         <span className="arrow" onClick={nextSlide} />
         <span className="arrow prev" onClick={prevSlide} />
-        <div className={"slides" + ([5, 6].includes(slide) ? " expand" : "")}>
+        <div className={"slides" + ([1, 2].includes(slide) ? " expand" : "")}>
           <div
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
@@ -49,6 +49,7 @@ function Process() {
               Next we have to figure out the general plan with your workout
               routine. Some of the things we might discuss are workout frequency
               and intensity...
+              <PlanOne />
             </div>
           </div>
           <div
@@ -60,6 +61,7 @@ function Process() {
               In this step, we will work on the actual exercises you will be
               performing during your workout, including the number of sets and
               the number of reps in each set.
+              <PlanTwo />
             </div>
           </div>
           <div
@@ -76,24 +78,10 @@ function Process() {
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Step 5 - Workout Plan Handout</div>
+            <div className="slide-header">Step 5 - Nutritional Guidance</div>
             <div className="slide-content">
-              You will come away from this step with a personalised workout plan
-              that I will write for you. The following slides contain an example
-              of this handout...
+              Nutritional guidance section here...
             </div>
-          </div>
-          <div
-            className="slide"
-            style={{ transform: `translateX(-${slide * 100}%)` }}
-          >
-            <PlanOne />
-          </div>
-          <div
-            className="slide"
-            style={{ transform: `translateX(-${slide * 100}%)` }}
-          >
-            <PlanTwo />
           </div>
         </div>
         <div className="dots">
