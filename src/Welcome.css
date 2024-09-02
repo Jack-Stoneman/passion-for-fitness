@@ -105,6 +105,42 @@
     font-weight: 600
 }
 
+.welcome-list {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-list li {
+    list-style: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.welcome-list li .bullet {
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-image: url("../media/dumbell.svg");
+    background-size: contain;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.welcome-list li span:not(.bullet) {
+    width: calc(100% - 25px);
+}
+
+/* .welcome-list li span {
+    margin-left: 25px;
+    text-indent: -25px;
+    display: inline-block;
+} */
+
 /* .introduction-grid span {
     display: block;
     width: 50px;

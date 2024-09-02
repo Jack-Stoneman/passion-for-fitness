@@ -29,12 +29,11 @@ function Welcome() {
       <div className="logo-container">
         <span className="logo" />
       </div>
-      <div className="welcome-title">Your Journey, My Passion.</div>
-      <div className="welcome-subtitle">Welcome to Passion for Fitness NZ!</div>
+      <div className="welcome-title">Your Journey, My Passion</div>
       <div className="welcome-message">
-        If you’re looking for customised training plans, exercise selection and
-        nutritional advice for a stronger fitter and healthier you, I can help
-        you achieve your fitness goals.
+        Welcome to Passion for Fitness NZ! If you’re looking for customised
+        training plans, exercise selection and nutritional advice for a stronger
+        fitter and healthier you, I can help you achieve your fitness goals.
       </div>
       <div className="introduction-grid">
         <div className="grid-wrapper">
@@ -42,19 +41,36 @@ function Welcome() {
             <div className="welcome-icon">
               <img src={weightLossIcon} />
             </div>
-            <div className="subsection-header">
-              Weight Loss & Losing Body Fat
-            </div>
+            <div className="subsection-header">Specialising In</div>
             {/* <span className="goal"/> */}
-            {paragraph1}
+            <ul className="welcome-list">
+              <li>
+                <span className="bullet" />
+                <span>Weight loss and reducing body fat</span>
+              </li>
+              <li>
+                <span className="bullet" />
+                <span>Building muscle and strength training</span>
+              </li>
+              <li>
+                <span className="bullet" />
+                <span>Core strength</span>
+              </li>
+              <li>
+                <span className="bullet" />
+                <span>Nutritional guidance</span>
+              </li>
+              <li>
+                <span className="bullet" />
+                <span>Over 50s strength and mobility</span>
+              </li>
+            </ul>
           </div>
           <div>
             <div className="welcome-icon">
               <img src={strengthIcon} />
             </div>
-            <div className="subsection-header">
-              Building Lean Muscle and Strength
-            </div>
+            <div className="subsection-header">1:1 Personal Training</div>
             {/* <span className="plan"/> */}
             <span className="separator" />
             {paragraph2}
@@ -65,9 +81,7 @@ function Welcome() {
             <div className="welcome-icon">
               <img src={nutritionIcon} />
             </div>
-            <div className="subsection-header">
-              Nutritional Coaching and Support
-            </div>
+            <div className="subsection-header">Online Training</div>
             {/* <span className="hourglass"/> */}
             <span className="separator" />
             {paragraph3}
@@ -76,9 +90,7 @@ function Welcome() {
             <div className="welcome-icon">
               <img src={mobilityIcon} />
             </div>
-            <div className="subsection-header">
-              Over 50s Mobility and Stability training
-            </div>
+            <div className="subsection-header">Qualifications</div>
             {/* <span className="health"/> */}
             <span className="separator" />
             {paragraph4}
