@@ -17,7 +17,7 @@
     row-gap: 10px;
 }
 
-#contact input, #contact textarea {
+#contact input, #contact textarea, #contact select {
     border: none;
     border-bottom: 3px solid rgba(0,0,0,0.2);
     font-size: 16px;
@@ -25,13 +25,21 @@
     width: 100%;
 }
 
-#contact input:focus, #contact textarea:focus {
+#contact input, #contact textarea {
+    text-indent: 4px;
+}
+
+#contact input:focus, #contact textarea:focus, #contact select:focus {
     outline: none;
     border-bottom: 3px solid var(--central-blue);
 }
 
-#contact input:hover, #contact textarea:hover {
+#contact input:hover, #contact textarea:hover, #contact select:hover {
     border-bottom: 3px solid var(--central-blue);
+}
+
+#contact select option {
+    padding: 0;
 }
 
 textarea {
@@ -65,4 +73,25 @@ button:focus {
     box-shadow: inset 6.5em 0 0 0 var(--central-blue);
     color: #fff;
     transition: 0.5s;
+}
+
+.genderOptions {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+
+.gender {
+    display: flex;
+    margin-right: 15px;
+}
+
+.gender label {
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+#contact .gender input {
+    margin: 0;
+    width: 20px;
 }
