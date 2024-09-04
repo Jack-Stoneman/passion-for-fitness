@@ -29,9 +29,8 @@
 
 .navbar-links {
     font-size: 20px;
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 15px;
+    display: flex;
+    height: 80px;
 }
 
 .navbar-links a {
@@ -39,18 +38,42 @@
     text-decoration: none;
     cursor: pointer;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.sub-options {
-    position: absolute;
-    opacity: 1;
+.options-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    overflow: hidden;
+    transition: height 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.options-wrapper span {
+    line-height: 80px;
+    text-align: center;
+}
+
+.options {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.7);
-    top: 52px;
+    overflow: hidden;
 }
 
-.sub-options a {
+.options-wrapper:hover {
+    height: 170px;
+}
+
+.options a {
     font-size: 16px;
-    text-wrap: nowrap;
+    padding: 0px 10px 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.link-header {
+    padding: 0px 15px;
 }

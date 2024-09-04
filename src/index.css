@@ -33,6 +33,19 @@ code {
   align-items: center;
 }
 
+button {
+  background: none;
+  padding: 10px 0px;
+  border: 2px solid var(--central-blue);
+}
+
+button:hover,
+button:focus {
+    box-shadow: inset 6.5em 0 0 0 var(--central-blue);
+    color: #fff;
+    transition: 0.5s;
+}
+
 .section.blue {
   background: linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
   color: #fff;

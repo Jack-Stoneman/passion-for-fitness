@@ -44,3 +44,11 @@
     overflow: hidden;
     opacity: 1;
 }
+
+.expand {
+    width: 160px;
+}
+
+.expand:hover {
+    box-shadow: inset 160px 0 0 0 var(--central-blue);
+}

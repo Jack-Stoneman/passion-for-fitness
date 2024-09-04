@@ -57,22 +57,12 @@ label:not(:first-of-type) {
 }
 
 .submit-button {
-    background: none;
     width: 6.5em;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-top: 20px;
-    padding: 10px 0px;
     font-size: 20px;
-    border: 2px solid var(--central-blue);
-}
-
-button:hover,
-button:focus {
-    box-shadow: inset 6.5em 0 0 0 var(--central-blue);
-    color: #fff;
-    transition: 0.5s;
 }
 
 .genderOptions {

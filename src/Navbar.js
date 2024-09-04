@@ -8,21 +8,21 @@ function Navbar() {
           Passion For Fitness NZ
         </a>
         <div className="navbar-links">
-          <a href="#about">About Me</a>
-          <a href="#process">
-            Training Types
-            <div className="sub-options">
+          <a href="#about" className="link-header">About Me</a>
+          <div className="options-wrapper">
+            <span className="link-header">Training Types</span>
+            <div className="options">
               <a href="">1:1 Training</a>
               <a href="">Online Training</a>
             </div>
-          </a>
-          <a href="#calendar">
-            Contact
-            <div className="sub-options">
+          </div>
+          <div className="options-wrapper">
+            <span className="link-header">Contact</span>
+            <div className="options">
               <a href="">Book a Call</a>
               <a href="">Enquire Now</a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
