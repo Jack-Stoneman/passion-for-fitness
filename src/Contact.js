@@ -82,7 +82,7 @@ function Contact() {
             />
             <label for="user_country">Country</label>
             {countryDropdown}
-            <label for="message">What is your question?</label>
+            <label for="message">What is your enquiry?</label>
             <textarea
               name="message"
               placeholder="Enter your question"

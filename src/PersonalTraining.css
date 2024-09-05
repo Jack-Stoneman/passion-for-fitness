@@ -1,0 +1,22 @@
+#personalTraining {
+    display: flex;
+    flex-direction: column;
+}
+
+.training-photo {
+    width: 700px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.training-type {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+}
+
+.training-text {
+    font-size: 18px;
+    width: 400px;
+    max-width: 100%;
+}

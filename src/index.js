@@ -12,6 +12,8 @@ import galleryThree from "./assets/gallery-3.jpg";
 import About from "./About";
 import Benefits from "./Benefits";
 import Contact from "./Contact";
+import PersonalTraining from "./PersonalTraining";
+import OnlineTraining from "./OnlineTraining";
 
 const images = [galleryOne, galleryTwo, galleryThree];
 
@@ -21,7 +23,8 @@ root.render(
     <Navbar />
     <Welcome />
     <Process />
-    <Benefits />
+    <PersonalTraining />
+    <OnlineTraining />
     <About />
     <Gallery images={images} interval={3000} />
     <Calendar />

@@ -37,6 +37,7 @@ button {
   background: none;
   padding: 10px 0px;
   border: 2px solid var(--central-blue);
+  cursor: pointer;
 }
 
 button:hover,
