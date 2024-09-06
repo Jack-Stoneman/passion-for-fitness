@@ -12,15 +12,15 @@ function Navbar() {
           <div className="options-wrapper">
             <span className="link-header">Training Types</span>
             <div className="options">
-              <a href="">1:1 Training</a>
-              <a href="">Online Training</a>
+              <a href="#personalTraining">1:1 Training</a>
+              <a href="#onlineTraining">Online Training</a>
             </div>
           </div>
           <div className="options-wrapper">
             <span className="link-header">Contact</span>
             <div className="options">
-              <a href="">Book a Call</a>
-              <a href="">Enquire Now</a>
+              <a href="#calendar">Book a Call</a>
+              <a href="#contact">Enquire Now</a>
             </div>
           </div>
         </div>

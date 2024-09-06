@@ -25,12 +25,12 @@
 }
 
 .logo {
-    background-image: url("../media/logo.svg");
+    background-image: url("../media/logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     display: block;
 }
 
