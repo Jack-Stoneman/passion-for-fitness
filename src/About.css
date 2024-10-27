@@ -16,39 +16,3 @@
     max-width: 100%;
     border-radius: 15px;
 }
-
-.about-text {
-    width: 500px;
-    max-width: 100%;
-}
-
-.about-text div {
-    transition: all 1s ease-in-out;
-    opacity: 1;
-}
-
-.about-abbreviated {
-    width: 100%;
-    font-size: 20px;
-    height: 110px;
-}
-
-.about-paragraph {
-    width: 100%;
-    font-size: 16px;
-    height: 260px;
-}
-
-.hidden {
-    height: 0;
-    overflow: hidden;
-    opacity: 1;
-}
-
-.expand {
-    width: 160px;
-}
-
-.expand:hover {
-    box-shadow: inset 160px 0 0 0 var(--central-blue);
-}

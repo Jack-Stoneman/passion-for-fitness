@@ -14,6 +14,7 @@ import Benefits from "./Benefits";
 import Contact from "./Contact";
 import PersonalTraining from "./PersonalTraining";
 import OnlineTraining from "./OnlineTraining";
+import Specialisation from "./Specialisation";
 
 const images = [galleryOne, galleryTwo, galleryThree];
 
@@ -22,6 +23,7 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Welcome />
+    <Specialisation />
     <Process />
     <PersonalTraining />
     <OnlineTraining />

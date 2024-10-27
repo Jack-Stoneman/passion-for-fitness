@@ -71,3 +71,11 @@
 #process .arrow.prev {
     transform: rotate(180deg)
 }
+
+.slide-content {
+    display: flex;
+}
+
+.slide-content img {
+    width: 500px;
+}

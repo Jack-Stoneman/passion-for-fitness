@@ -3,6 +3,11 @@ import { useState } from "react";
 import { useTransition } from "react";
 import PlanOne from "./PlanOne";
 import PlanTwo from "./PlanTwo";
+import slide1Photo from "./assets/gym-photos/DSC01059.jpg";
+import slide2Photo from "./assets/gym-photos/DSC00848.jpg";
+import slide3Photo from "./assets/gym-photos/DSC01117.jpg";
+import slide4Photo from "./assets/gym-photos/DSC00678.jpg";
+import slide5Photo from "./assets/gym-photos/DSC00950.jpg";
 
 function Process() {
   const [slide, setSlide] = useState(0);
@@ -25,62 +30,91 @@ function Process() {
 
   return (
     <div id="process">
-      <div className="process-title section-header">STEP BY STEP PROCESS</div>
+      <div className="process-title section-header">
+        Creating a Great Experience For You
+      </div>
       <div className="carousel">
         <span className="arrow" onClick={nextSlide} />
         <span className="arrow prev" onClick={prevSlide} />
-        <div className={"slides" + ([1, 2].includes(slide) ? " expand" : "")}>
+        <div className="slides">
           <div
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Step 1 - Consultation</div>
+            <div className="slide-header">
+              Comprehensive Consultation Process:
+            </div>
             <div className="slide-content">
-              In this initial step, we will discuss what you are hoping to
-              achieve with personal training...
+              <img src={slide1Photo}></img>
+              <span>
+                I'm a good listener and will spend time with you to understand
+                your goals, medical history, injuries, lifestyle and fitness
+                background. This ensures that your program is tailored precisely
+                to your needs and aspirations.
+              </span>
             </div>
           </div>
           <div
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Step 2 - Plan</div>
+            <div className="slide-header">Finding Your Sweet Spot:</div>
             <div className="slide-content">
-              Next we have to figure out the general plan with your workout
-              routine. Some of the things we might discuss are workout frequency
-              and intensity...
-              <PlanOne />
+              <img src={slide2Photo}></img>
+              <span>
+                Your training experience is unique to you, and I’ll help you
+                find the perfect balance between aesthetics (how you want to
+                look), escapism (creating a space to focus and unwind),
+                education (learning the &#39;why&#39; behind each movement), and
+                entertainment (keeping things fun and engaging).
+              </span>
             </div>
           </div>
           <div
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Step 3 - Exercise Selection</div>
+            <div className="slide-header">Progress Reviews:</div>
             <div className="slide-content">
-              In this step, we will work on the actual exercises you will be
-              performing during your workout, including the number of sets and
-              the number of reps in each set.
-              <PlanTwo />
+              <img src={slide3Photo}></img>
+
+              <span>
+                I’ll have regular check-ins to track your progress, identify
+                what’s helping or hindering your journey, and adjust your plan.
+                This ensures we stay focused, motivated, and aligned with your
+                evolving fitness goals.
+              </span>
             </div>
           </div>
           <div
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Step 4 - Induction</div>
+            <div className="slide-header">Nutritional Intervention:</div>
             <div className="slide-content">
-              The induction process will involve me explaining how the personal
-              training sessions will work, including safety brieifings etc...
+              <img src={slide4Photo}></img>
+              <span>
+                Together, we’ll assess your eating habits, review your food log,
+                and choose simple, effective nutritional strategies that fit
+                your lifestyle and are sustainable for the long term.
+              </span>
             </div>
           </div>
           <div
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Step 5 - Nutritional Guidance</div>
+            <div className="slide-header">
+              Encouragement, Support, and Motivation:
+            </div>
             <div className="slide-content">
-              Nutritional guidance section here...
+              <img src={slide5Photo}></img>
+              <span>
+                I’m here to motivate you every step of the way, providing
+                positive reinforcement and accountability through regular chats
+                and reminders, helping you stay on track and unlock the best
+                version of yourself.
+              </span>
             </div>
           </div>
         </div>
