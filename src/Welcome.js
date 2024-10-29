@@ -27,7 +27,7 @@ function Welcome() {
             injuries.
           </div>
         </div>
-        <video className="welcome-video" autoplay loop muted>
+        <video className="welcome-video" autoPlay loop muted>
           <source src={welcomeVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

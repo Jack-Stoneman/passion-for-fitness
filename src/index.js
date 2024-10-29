@@ -25,9 +25,9 @@ root.render(
     <Welcome />
     <Specialisation />
     <Process />
+    <About />
     <PersonalTraining />
     <OnlineTraining />
-    <About />
     <Gallery images={images} interval={3000} />
     <Calendar />
     <Contact />

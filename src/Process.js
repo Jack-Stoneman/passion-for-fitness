@@ -29,7 +29,7 @@ function Process() {
   }
 
   return (
-    <div id="process">
+    <div id="process" className="section blue">
       <div className="process-title section-header">
         Creating a Great Experience For You
       </div>

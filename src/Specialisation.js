@@ -71,7 +71,9 @@ function Specialisation() {
                   <li>
                     <span className="bullet"></span>
                     <span>
-                      <strong>{key}</strong> - {value}
+                      <strong>{key}</strong>
+                      <br />
+                      <span className="additional-info">{value}</span>
                     </span>
                   </li>
                 ))}

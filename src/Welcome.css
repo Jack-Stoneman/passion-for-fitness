@@ -34,10 +34,16 @@
     display: block;
 }
 
+.welcome-text-wrapper {
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .welcome-title {
     font-size: 42px;
     font-weight: 600;
-    margin-top: 25px;
     margin-bottom: 10px;
     font-style: italic;
 }
@@ -52,10 +58,15 @@
     font-size: 24px;
     max-width: 800px;
     font-style: italic;
-    margin-bottom: 25px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap:50px;
 }
 
 .welcome-video {
-    height: 500px;
+    height: 650px;
+    border-radius: 15px;
 }
 

@@ -13,11 +13,12 @@
 .inner-wrapper {
     color: #fff;
     width: 100%;
-    max-width: 800px;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    gap: 25px;
 }
 
 .navbar-title {
