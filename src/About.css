@@ -12,7 +12,13 @@
 }
 
 .about-photo {
-    width: 700px;
+    width: 500px;
     max-width: 100%;
     border-radius: 15px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
