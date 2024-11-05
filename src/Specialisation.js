@@ -55,6 +55,16 @@ let icons = {
 };
 
 function Specialisation() {
+  const handleClick = (e) => {
+    let additionalInfo = e.currentTarget.childNodes[3];
+    let height = additionalInfo.style.height;
+    if (height) {
+      additionalInfo.style.height = "";
+    } else {
+      additionalInfo.style.height = `${additionalInfo.scrollHeight}px`;
+    }
+  }
+
   return (
     <div id="specialisation" className="section">
       <div className="section-header">Areas of Specialty</div>
@@ -70,8 +80,9 @@ function Specialisation() {
                 {Object.entries(value).map(([key, value]) => (
                   <li>
                     <span className="bullet"></span>
-                    <span>
-                      <strong>{key}</strong>
+                    <span onClick={handleClick} className="bullet-text">
+                      <strong>{key} <span className="expand-arrow"></span> </strong>
+                      <span class="down-arrow"></span>
                       <br />
                       <span className="additional-info">{value}</span>
                     </span>

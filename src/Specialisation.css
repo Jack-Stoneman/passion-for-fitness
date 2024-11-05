@@ -77,8 +77,35 @@
     background-position: center;
 }
 
-.welcome-list li span:not(.bullet) {
+.welcome-list li span.bullet-text {
     width: calc(100% - 25px);
+}
+
+.bullet-text strong {
+    cursor: pointer;
+    position: relative;
+}
+
+.bullet-text strong:hover {
+    color: var(--central-blue);
+}
+
+.additional-info {
+    display: block;
+    height: 0;
+    transition: height 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.expand-arrow {
+    background: url("./assets/expand-arrow.svg") center center no-repeat;
+    display: inline-block;
+    background-size: contain;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    height: 100%;
 }
 
 /* .welcome-list li span {
