@@ -61,7 +61,7 @@
 .welcome-list li {
     list-style: none;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 6px 20px;
     display: flex;
 }
 
@@ -77,13 +77,18 @@
     background-position: center;
 }
 
-.welcome-list li span.bullet-text {
+.welcome-list li .bullet-text {
     width: calc(100% - 25px);
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
 }
 
 .bullet-text strong {
     cursor: pointer;
-    position: relative;
 }
 
 .bullet-text strong:hover {
@@ -102,10 +107,12 @@
     display: inline-block;
     background-size: contain;
     width: 20px;
-    position: absolute;
-    top: 0;
-    right: -20px;
-    height: 100%;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+}
+
+.title-wrapper.expanded .expand-arrow {
+    transform: rotate(0.25turn);
 }
 
 /* .welcome-list li span {

@@ -88,8 +88,8 @@ function Contact() {
               placeholder="Enter your question"
               required
             />
-            <button className="submit-button" type="submit">
-              Send
+            <button className="submit-button hover-button" type="submit">
+              <span className="text">Send</span>
             </button>
           </form>
         </div>

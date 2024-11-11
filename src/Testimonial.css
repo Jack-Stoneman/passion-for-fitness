@@ -1,0 +1,20 @@
+.testimonial {
+    border-radius: 25px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+}
+
+.testimonial-name {
+    color: var(--central-blue);
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--central-blue);
+}
+
+.job-title {
+    font-style: italic;
+}

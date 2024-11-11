@@ -16,8 +16,6 @@ import PersonalTraining from "./PersonalTraining";
 import OnlineTraining from "./OnlineTraining";
 import Specialisation from "./Specialisation";
 
-const images = [galleryOne, galleryTwo, galleryThree];
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -28,7 +26,6 @@ root.render(
     <About />
     <PersonalTraining />
     <OnlineTraining />
-    <Gallery images={images} interval={3000} />
     <Calendar />
     <Contact />
   </React.StrictMode>

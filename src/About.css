@@ -9,16 +9,30 @@
     flex-wrap: wrap;
     margin: 0px 50px;
     column-gap: 20px;
+    justify-content: center;
+}
+
+.about-content > * {
+    margin-bottom: 20px;
 }
 
 .about-photo {
     width: 500px;
-    max-width: 100%;
     border-radius: 15px;
 }
 
 .about-text {
     display: flex;
+    width: 500px;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.qualifications {
+    width: 400px;
 }
