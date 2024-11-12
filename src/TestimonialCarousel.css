@@ -11,9 +11,10 @@
     width: 100%;
 }
 
-.carousel {
+#testimonials .carousel {
     display: flex;
     gap: 20px;
     position: relative;
     overflow: hidden;
+    width: 90%;
   }
