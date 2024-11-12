@@ -11,3 +11,5 @@ function Testimonial({ content }) {
     </div>
   );
 }
+
+export default Testimonial;

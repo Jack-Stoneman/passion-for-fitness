@@ -1,0 +1,19 @@
+#testimonials {
+    flex-direction: column;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+  }

@@ -15,6 +15,7 @@ import Contact from "./Contact";
 import PersonalTraining from "./PersonalTraining";
 import OnlineTraining from "./OnlineTraining";
 import Specialisation from "./Specialisation";
+import TestimonialCarousel from "./TestimonialCarousel";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,6 +27,7 @@ root.render(
     <About />
     <PersonalTraining />
     <OnlineTraining />
+    <TestimonialCarousel />
     <Calendar />
     <Contact />
   </React.StrictMode>
