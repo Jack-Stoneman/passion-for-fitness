@@ -3,20 +3,32 @@
     flex-direction: column;
 }
 
-.training-photo {
-    width: 700px;
-    max-width: 100%;
-    border-radius: 15px;
+.pt-section {
+    max-width: 90%;
+    text-align: center;
+    font-size: 20px;
 }
 
-.training-type {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 20px;
+.pt-section .bold {
+    font-size: 24px;
 }
 
-.training-text {
-    font-size: 18px;
-    width: 400px;
-    max-width: 100%;
+.pricing-container {
+    background: white;
+    height: 300px;
+    width: 300px;
+    /* -webkit-mask:
+        radial-gradient(circle 40px at top right,#0000 98%,#000) top right;  
+    -webkit-mask-size:51% 51%;
+    -webkit-mask-repeat:no-repeat; */
+    position: relative;
+}
+
+.offset-border {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
 }

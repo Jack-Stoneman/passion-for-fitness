@@ -81,6 +81,7 @@ code {
 .section-header {
   font-size: 32px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .arrow {
