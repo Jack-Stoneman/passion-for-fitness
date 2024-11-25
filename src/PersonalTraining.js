@@ -1,5 +1,6 @@
 import "./PersonalTraining.css";
 import aboutPhoto from "./assets/gallery-1.jpg";
+import snap_logo from "./assets/snap_logo.png";
 
 function PersonalTraining() {
   return (
@@ -20,6 +21,9 @@ function PersonalTraining() {
       </div>
       <div className="pricing-container">
         <div className="offset-border"></div>
+        <div className="logo-container">
+          <img src={snap_logo} />
+        </div>
       </div>
     </div>
   );
