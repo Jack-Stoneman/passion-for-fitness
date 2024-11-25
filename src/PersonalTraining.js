@@ -2,6 +2,30 @@ import "./PersonalTraining.css";
 import aboutPhoto from "./assets/gallery-1.jpg";
 import snap_logo from "./assets/snap_logo.png";
 
+const pricing = [
+  {
+    type: "Members",
+    price: 79,
+    points: [
+      "Minimum 2 sessions/week",
+      "60 mins per session",
+      "Full package & coaching support",
+      "Train at Hornby, Papanui or Barrington gyms",
+    ],
+  },
+  {
+    type: "Non-Members",
+    price: 95,
+    points: [
+      "Full 24/7 access to our Hornby gym",
+      "No joining fee",
+      "Minimum 2 sessions/week",
+      "60 mins per session",
+      "Full package & coaching support",
+    ],
+  },
+];
+
 function PersonalTraining() {
   return (
     <div id="personalTraining" className="section blue">
@@ -19,12 +43,20 @@ function PersonalTraining() {
           need.
         </div>
       </div>
-      <div className="pricing-container">
-        <div className="offset-border"></div>
-        <div className="logo-container">
-          <img src={snap_logo} />
+      {pricing.map((price) => (
+        <div className="pricing-container">
+          <img src={snap_logo} className="snap-logo" />
+          <div className="price-wrapper">
+            <div className="price">${price["price"]}</div>
+            <div className="price-type">{price["type"]}</div>
+          </div>
+          <ul className="pricing-points">
+            {price["points"].map((point) => (
+              <div>{point}</div>
+            ))}
+          </ul>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
