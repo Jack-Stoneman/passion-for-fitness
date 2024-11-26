@@ -1,5 +1,6 @@
 :root {
   --central-blue: #0074d9;
+  --snap-red: #c4161c;
 }
 
 html {
@@ -79,7 +80,7 @@ code {
 }
 
 .section-header {
-  font-size: 32px;
+  font-size: 48px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }

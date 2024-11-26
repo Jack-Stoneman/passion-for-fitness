@@ -7,7 +7,7 @@ const pricing = [
     type: "Members",
     price: 79,
     points: [
-      "Minimum 2 sessions/week",
+      "Minimum 2 sessions/week*",
       "60 mins per session",
       "Full package & coaching support",
       "Train at Hornby, Papanui or Barrington gyms",
@@ -19,44 +19,98 @@ const pricing = [
     points: [
       "Full 24/7 access to our Hornby gym",
       "No joining fee",
-      "Minimum 2 sessions/week",
+      "Minimum 2 sessions/week*",
       "60 mins per session",
       "Full package & coaching support",
     ],
   },
 ];
 
+const trainingList = {
+  "Custom monthly exercise plans & programs":
+    "Tailored to your goals and progress, updated each month for optimal results.",
+  "Monthly progress reviews":
+    "Track your achievements, stay on course, and make adjustments as needed.",
+  "Free fitness app":
+    "Manage your workouts and track progress anywhere, anytime.",
+  "Text reminders & support":
+    "Stay motivated with regular check-ins and direct access to your trainer.",
+  "Nutrition advice & tracking":
+    "Receive guidance on sustainable nutrition to complement your fitness plan.",
+  "Free gym membership access (for non-members)":
+    "Non-members of Snap Fitness will enjoy full 24/7 access to our Hornby gym, which is located only 10-15 minutes from central Christchurch.",
+};
+
 function PersonalTraining() {
+  const handleClick = (e) => {
+    let titleWrapper = e.currentTarget.childNodes[0],
+      additionalInfo = e.currentTarget.childNodes[1];
+    let height = additionalInfo.style.height;
+    titleWrapper.classList.toggle("expanded");
+    if (height) {
+      additionalInfo.style.height = "";
+    } else {
+      additionalInfo.style.height = `${additionalInfo.scrollHeight}px`;
+    }
+  };
   return (
     <div id="personalTraining" className="section blue">
       <div className="section-header">1:1 TRAINING</div>
       <div className="pt-section">
-        <div className="bold">
-          Achieve real results with a proven program tailored just for you
-        </div>
-        <div>
-          Transform your body and reach your fitness goals with my personalised
-          12-16 week body transformation program, now open to members AND
-          non-members of SnapFitness gyms in Christchurch. Whether you're
-          looking to lose weight, build muscle, or boost your strength, this
-          all-inclusive program provides the tools, support, and flexibility you
-          need.
-        </div>
-      </div>
-      {pricing.map((price) => (
-        <div className="pricing-container">
-          <img src={snap_logo} className="snap-logo" />
-          <div className="price-wrapper">
-            <div className="price">${price["price"]}</div>
-            <div className="price-type">{price["type"]}</div>
+        <div className="section-column">
+          <div className="bold">
+            Achieve real results with a proven program tailored just for you
           </div>
-          <ul className="pricing-points">
-            {price["points"].map((point) => (
-              <div>{point}</div>
+          <div>
+            Transform your body and reach your fitness goals with my
+            personalised 12-16 week body transformation program, now open to
+            members AND non-members of SnapFitness gyms in Christchurch. Whether
+            you're looking to lose weight, build muscle, or boost your strength,
+            this all-inclusive program provides the tools, support, and
+            flexibility you need.
+          </div>
+          <div className="bold">Your all-inclusive training package:</div>
+          <ul className="welcome-list light">
+            {Object.entries(trainingList).map(([key, value]) => (
+              <li>
+                <span className="bullet"></span>
+                <span onClick={handleClick} className="bullet-text">
+                  <span class="title-wrapper">
+                    <strong>{key}</strong>
+                    <span class="expand-arrow"></span>
+                  </span>
+                  <span className="additional-info">{value}</span>
+                </span>
+              </li>
             ))}
           </ul>
         </div>
-      ))}
+        <div className="section-column">
+          <div className="prices">
+            {pricing.map((price) => (
+              <div className="pricing-container">
+                <div className="price-wrapper">
+                  <div className="price">
+                    <span className="amount">${price["price"]}/</span>session
+                  </div>
+                </div>
+                <ul className="pricing-points">
+                  <li>{price["type"]}</li>
+                  {price["points"].map((point) => (
+                    <li>{point}</li>
+                  ))}
+                </ul>
+                <img src={snap_logo} className="snap-logo" />
+              </div>
+            ))}
+          </div>
+          <div className="small-note">
+            * For meaningful progress, clients should commit to a minimum of 2
+            personal training sessions per week, supplemented by independent
+            workouts or activity outside of sessions.
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
