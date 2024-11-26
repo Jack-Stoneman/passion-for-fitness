@@ -1,6 +1,9 @@
 import "./PersonalTraining.css";
 import aboutPhoto from "./assets/gallery-1.jpg";
 import snap_logo from "./assets/snap_logo.png";
+import clock from "./assets/clock.svg";
+import tape from "./assets/tape.svg";
+import muscle from "./assets/muscle.svg";
 
 const pricing = [
   {
@@ -40,6 +43,45 @@ const trainingList = {
   "Free gym membership access (for non-members)":
     "Non-members of Snap Fitness will enjoy full 24/7 access to our Hornby gym, which is located only 10-15 minutes from central Christchurch.",
 };
+
+const guidelines = [
+  {
+    title: "Weight Loss",
+    sessionsWeekly: "4",
+    trainerSessions: "2 with trainer",
+    independentSessions: "2 independent cardio sessions",
+    duration: "12-16 weeks",
+    structure: [
+      "Focus on strength training (2-3 days)",
+      "Incorporate HIIT or cardio (2-3 days)",
+      "Include nutritional guidance",
+    ],
+  },
+  {
+    title: "Muscle Gain",
+    sessionsWeekly: "4-5",
+    trainerSessions: "2-3 with trainer",
+    independentSessions: "2 independent strength sessions",
+    duration: "16 weeks",
+    structure: [
+      "Resistance training (4-5 days)",
+      "Lower cardio volume",
+      "Adequate protein intake",
+    ],
+  },
+  {
+    title: "Body Recomposition",
+    sessionsWeekly: "4",
+    trainerSessions: "2 with trainer",
+    independentSessions: "2 independent strength/cardio sessions",
+    duration: "16 weeks",
+    structure: [
+      "Strength training to build muscle (3-4 days)",
+      "Cardio to burn fat (2-3 days)",
+      "Nutrition focus on protein intake & calories",
+    ],
+  },
+];
 
 function PersonalTraining() {
   const handleClick = (e) => {
@@ -108,6 +150,32 @@ function PersonalTraining() {
             * For meaningful progress, clients should commit to a minimum of 2
             personal training sessions per week, supplemented by independent
             workouts or activity outside of sessions.
+          </div>
+        </div>
+      </div>
+      <div className="pt-section">
+        <div className="section-column">
+          <div className="training-guidelines">
+            {guidelines.map((guideline) => (
+              <div className="guideline-card">
+                <div className="left-column">
+                  <div className="bold">{guideline.title}</div>
+                  <div className="guideline-section">
+                    <div className="guideline-title">
+                      {guideline.sessionsWeekly} sessions per week
+                    </div>
+                    <div className="guideline-points">
+                      <div>{guideline.trainerSessions}</div>
+                      <div>{guideline.independentSessions}</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="duration-wrapper">
+                  <img src={tape} className="clock-icon" />
+                  <div className="duration-text">{guideline.duration}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

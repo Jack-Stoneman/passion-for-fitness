@@ -112,3 +112,24 @@
     font-size:14px;
     text-align: center;
 }
+
+.training-guidelines {
+    display: flex;
+    gap: 20px;
+}
+
+.guideline-card {
+    /* width: 500px; */
+    background: white;
+    display: flex;
+    color: black;
+    padding: 20px;
+}
+
+.duration-wrapper {
+    margin-left: auto;
+}
+
+.clock-icon {
+    width: 80px;
+}
