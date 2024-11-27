@@ -2,8 +2,11 @@ import "./PersonalTraining.css";
 import aboutPhoto from "./assets/gallery-1.jpg";
 import snap_logo from "./assets/snap_logo.png";
 import clock from "./assets/clock.svg";
-import tape from "./assets/tape.svg";
-import muscle from "./assets/muscle.svg";
+import tape from "./assets/weight-loss.svg";
+import muscle from "./assets/strength.svg";
+import hornby from "./assets/Hornby.png";
+import barrington from "./assets/Barrington.png";
+import papanui from "./assets/Papanui.png";
 
 const pricing = [
   {
@@ -47,10 +50,11 @@ const trainingList = {
 const guidelines = [
   {
     title: "Weight Loss",
+    centerCard: false,
     sessionsWeekly: "4",
     trainerSessions: "2 with trainer",
     independentSessions: "2 independent cardio sessions",
-    duration: "12-16 weeks",
+    duration: "12-16 weeks for significant progress",
     structure: [
       "Focus on strength training (2-3 days)",
       "Incorporate HIIT or cardio (2-3 days)",
@@ -58,27 +62,29 @@ const guidelines = [
     ],
   },
   {
-    title: "Muscle Gain",
-    sessionsWeekly: "4-5",
-    trainerSessions: "2-3 with trainer",
-    independentSessions: "2 independent strength sessions",
-    duration: "16 weeks",
-    structure: [
-      "Resistance training (4-5 days)",
-      "Lower cardio volume",
-      "Adequate protein intake",
-    ],
-  },
-  {
     title: "Body Recomposition",
+    centerCard: true,
     sessionsWeekly: "4",
     trainerSessions: "2 with trainer",
     independentSessions: "2 independent strength/cardio sessions",
-    duration: "16 weeks",
+    duration: "16 weeks for visible results",
     structure: [
       "Strength training to build muscle (3-4 days)",
       "Cardio to burn fat (2-3 days)",
       "Nutrition focus on protein intake & calories",
+    ],
+  },
+  {
+    title: "Muscle Gain",
+    centerCard: false,
+    sessionsWeekly: "4-5",
+    trainerSessions: "2-3 with trainer",
+    independentSessions: "2 independent strength sessions",
+    duration: "16 weeks for muscle growth & recovery",
+    structure: [
+      "Resistance training (4-5 days)",
+      "Lower cardio volume",
+      "Adequate protein intake",
     ],
   },
 ];
@@ -155,27 +161,70 @@ function PersonalTraining() {
       </div>
       <div className="pt-section">
         <div className="section-column">
+          <div className="bold">Recommended guidelines by goal:</div>
           <div className="training-guidelines">
             {guidelines.map((guideline) => (
-              <div className="guideline-card">
-                <div className="left-column">
-                  <div className="bold">{guideline.title}</div>
-                  <div className="guideline-section">
-                    <div className="guideline-title">
-                      {guideline.sessionsWeekly} sessions per week
-                    </div>
-                    <div className="guideline-points">
-                      <div>{guideline.trainerSessions}</div>
-                      <div>{guideline.independentSessions}</div>
-                    </div>
+              <div className={"guideline-card".concat(guideline.centerCard ? " center": "")}>
+                <div className="bold">{guideline.title}</div>
+                <div className="guideline-section">
+                  <div className="guideline-title">
+                    {guideline.sessionsWeekly} sessions per week:
                   </div>
+                  <ul className="guideline-points">
+                    <li>{guideline.trainerSessions}</li>
+                    <li>{guideline.independentSessions}</li>
+                  </ul>
                 </div>
-                <div className="duration-wrapper">
-                  <img src={tape} className="clock-icon" />
-                  <div className="duration-text">{guideline.duration}</div>
+                <div className="guideline-section">
+                  <div className="guideline-title">
+                    Duration:
+                  </div>
+                  <ul className="guideline-points">
+                    <li>{guideline.duration}</li>
+                  </ul>
+                </div>
+                <div className="guideline-section">
+                  <div className="guideline-title">
+                    Structure:
+                  </div>
+                  <ul className="guideline-points">
+                    {guideline.structure.map(point => <li>{point}</li>)}
+                  </ul>
+                </div>
+                <div className="guideline-image-wrapper">
+                  <img src={guideline.title=="Muscle Gain" ? muscle : tape} className="guideline-icon" />
+                  {guideline.centerCard ?
+                    <img src={muscle} className="guideline-icon"/> : ""}
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="pt-section">
+        <div className="section-column">
+          <div className="snap-locations">
+            <div className="snap-location">
+              <img src={hornby} className="location-image" />
+              <div className="location-name">
+                <img src={snap_logo} />
+                <div className="branch">Hornby</div>
+              </div>
+            </div>
+            <div className="snap-location">
+              <img src={papanui} className="location-image" />
+              <div className="location-name">
+                <img src={snap_logo} />
+                <div className="branch">Papanui</div>
+              </div>
+            </div>
+            <div className="snap-location">
+              <img src={barrington} className="location-image" />
+              <div className="location-name">
+                <img src={snap_logo} />
+                <div className="branch">Barrington</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

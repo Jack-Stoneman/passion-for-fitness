@@ -9,6 +9,7 @@
     display: flex;
     gap: 50px;
     max-width: 1500px;
+    margin-bottom: 50px;
 }
 
 .pt-section .bold {
@@ -20,6 +21,7 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 10px;
+    width: 100%
 }
 
 .prices {
@@ -115,21 +117,93 @@
 
 .training-guidelines {
     display: flex;
-    gap: 20px;
+    gap: 60px;
+    width: 100%;
 }
 
 .guideline-card {
     /* width: 500px; */
     background: white;
     display: flex;
+    flex-direction: column;
     color: black;
     padding: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    /* border-top: 5px solid black;
+    border-bottom: 5px solid black; */
+    gap: 10px;
+    flex-grow: 1;
 }
 
 .duration-wrapper {
     margin-left: auto;
 }
 
-.clock-icon {
-    width: 80px;
+.guideline-image-wrapper {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    gap: 10px;
 }
+
+.guideline-icon {
+    width: 50px;
+}
+
+.guideline-title {
+    color: var(--central-blue);
+    font-weight: 600
+}
+
+.guideline-points {
+    font-size: 18px;
+    list-style: "- ";
+    margin: 0;
+}
+
+.snap-locations {
+    display: flex;
+    gap: 50px;
+}
+
+.snap-location {
+    position: relative;
+}
+
+.snap-location .location-name {
+    position: absolute;
+    background: white;
+    top: 60%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.location-name img {
+    width: 300px;
+}
+
+.snap-location .location-image {
+    width: 100%;
+}
+
+.location-name .branch {
+    font-family: Poppins;
+    color: #6f7074;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: left;
+    margin-top: -18px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    letter-spacing: 0.2em;
+}
+
