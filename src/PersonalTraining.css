@@ -31,10 +31,6 @@
 
 .pricing-container {
     width: 305px;
-    /* -webkit-mask:
-        radial-gradient(circle 40px at top right,#0000 98%,#000) top right;  
-    -webkit-mask-size:51% 51%;
-    -webkit-mask-repeat:no-repeat; */
     position: relative;
     background: white;
     border-radius: 25px;
@@ -48,20 +44,6 @@
     border-bottom: 5px solid var(--snap-red);
     gap: 20px;
 }
-
-/* .logo-container {
-    background: #6f7074;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-} */
 
 .snap-logo {
     width: 250px;
@@ -122,7 +104,6 @@
 }
 
 .guideline-card {
-    /* width: 500px; */
     background: white;
     display: flex;
     flex-direction: column;
@@ -131,8 +112,6 @@
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 25px;
-    /* border-top: 5px solid black;
-    border-bottom: 5px solid black; */
     gap: 10px;
     flex-grow: 1;
 }
