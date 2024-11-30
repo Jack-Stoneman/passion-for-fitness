@@ -24,6 +24,11 @@
     width: 100%
 }
 
+.section-column.row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .prices {
     display: flex;
     gap: 20px;
@@ -184,5 +189,21 @@
     margin-left: 20px;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
+}
+
+#personalTraining .carousel {
+    width: 560px;
+}
+
+#personalTraining .slides {
+    width: 560px;
+    height: 340px;
+}
+
+.pt-carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -1,4 +1,6 @@
 import "./PersonalTraining.css";
+import { useState } from "react";
+import { useTransition } from "react";
 import aboutPhoto from "./assets/gallery-1.jpg";
 import snap_logo from "./assets/snap_logo.png";
 import clock from "./assets/clock.svg";
@@ -62,19 +64,6 @@ const guidelines = [
     ],
   },
   {
-    title: "Body Recomposition",
-    centerCard: true,
-    sessionsWeekly: "4",
-    trainerSessions: "2 with trainer",
-    independentSessions: "2 independent strength/cardio sessions",
-    duration: "16 weeks for visible results",
-    structure: [
-      "Strength training to build muscle (3-4 days)",
-      "Cardio to burn fat (2-3 days)",
-      "Nutrition focus on protein intake & calories",
-    ],
-  },
-  {
     title: "Muscle Gain",
     centerCard: false,
     sessionsWeekly: "4-5",
@@ -87,9 +76,41 @@ const guidelines = [
       "Adequate protein intake",
     ],
   },
+  {
+    title: "Body Recomposition",
+    centerCard: true,
+    sessionsWeekly: "4",
+    trainerSessions: "2 with trainer",
+    independentSessions: "2 independent strength/cardio sessions",
+    duration: "16 weeks for visible results",
+    structure: [
+      "Strength training to build muscle (3-4 days)",
+      "Cardio to burn fat (2-3 days)",
+      "Nutrition focus on protein intake & calories",
+    ],
+  },
 ];
 
 function PersonalTraining() {
+  const [guideSlide, setGuideSlide] = useState(0);
+  const [locationSlide, setLocationSlide] = useState(0);
+  const [isPending, startTransition] = useTransition();
+  const slideCount = 3;
+
+  const nextSlide = (slide, slideSetter) => {
+    startTransition(() => slideSetter((slide + 1) % slideCount));
+  };
+
+  function prevSlide(slide, slideSetter) {
+    let newSlide;
+    if (slide) {
+      newSlide = (slide - 1) % slideCount;
+    } else {
+      newSlide = slideCount - 1;
+    }
+    startTransition(() => slideSetter(newSlide));
+  }
+
   const handleClick = (e) => {
     let titleWrapper = e.currentTarget.childNodes[0],
       additionalInfo = e.currentTarget.childNodes[1];
@@ -160,73 +181,133 @@ function PersonalTraining() {
         </div>
       </div>
       <div className="pt-section">
-        <div className="section-column">
-          <div className="bold">Recommended guidelines by goal:</div>
-          <div className="training-guidelines">
-            {guidelines.map((guideline) => (
-              <div className={"guideline-card".concat(guideline.centerCard ? " center": "")}>
-                <div className="bold">{guideline.title}</div>
-                <div className="guideline-section">
-                  <div className="guideline-title">
-                    {guideline.sessionsWeekly} sessions per week:
+        <div className="section-column row-wrap">
+          <div className="pt-carousel-wrapper">
+            <div className="bold">Recommended guidelines by goal:</div>
+            <div className="carousel">
+              <span
+                className="arrow"
+                onClick={() => {
+                  nextSlide(guideSlide, setGuideSlide);
+                }}
+              />
+              <span
+                className="arrow prev"
+                onClick={() => {
+                  prevSlide(guideSlide, setGuideSlide);
+                }}
+              />
+              <div className="slides">
+                {guidelines.map((guideline) => (
+                  <div
+                    className="slide"
+                    style={{ transform: `translateX(-${guideSlide * 100}%)` }}
+                  >
+                    <div
+                      className={"guideline-card".concat(
+                        guideline.centerCard ? " center" : ""
+                      )}
+                    >
+                      <div className="bold">{guideline.title}</div>
+                      <div className="guideline-section">
+                        <div className="guideline-title">
+                          {guideline.sessionsWeekly} sessions per week:
+                        </div>
+                        <ul className="guideline-points">
+                          <li>{guideline.trainerSessions}</li>
+                          <li>{guideline.independentSessions}</li>
+                        </ul>
+                      </div>
+                      <div className="guideline-section">
+                        <div className="guideline-title">Duration:</div>
+                        <ul className="guideline-points">
+                          <li>{guideline.duration}</li>
+                        </ul>
+                      </div>
+                      <div className="guideline-section">
+                        <div className="guideline-title">Structure:</div>
+                        <ul className="guideline-points">
+                          {guideline.structure.map((point) => (
+                            <li>{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="guideline-image-wrapper">
+                        <img
+                          src={guideline.title == "Muscle Gain" ? muscle : tape}
+                          className="guideline-icon"
+                        />
+                        {guideline.centerCard ? (
+                          <img src={muscle} className="guideline-icon" />
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </div>
                   </div>
-                  <ul className="guideline-points">
-                    <li>{guideline.trainerSessions}</li>
-                    <li>{guideline.independentSessions}</li>
-                  </ul>
-                </div>
-                <div className="guideline-section">
-                  <div className="guideline-title">
-                    Duration:
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="pt-carousel-wrapper">
+            <div className="bold">Snap Fitness locations:</div>
+            <div className="carousel">
+              <span
+                className="arrow"
+                onClick={() => {
+                  nextSlide(locationSlide, setLocationSlide);
+                }}
+              />
+              <span
+                className="arrow prev"
+                onClick={() => {
+                  prevSlide(locationSlide, setLocationSlide);
+                }}
+              />
+              <div className="slides">
+                <div
+                  className="slide"
+                  style={{ transform: `translateX(-${locationSlide * 100}%)` }}
+                >
+                  <div className="snap-location">
+                    <img src={hornby} className="location-image" />
+                    <div className="location-name">
+                      <img src={snap_logo} />
+                      <div className="branch">Hornby</div>
+                    </div>
                   </div>
-                  <ul className="guideline-points">
-                    <li>{guideline.duration}</li>
-                  </ul>
                 </div>
-                <div className="guideline-section">
-                  <div className="guideline-title">
-                    Structure:
+                <div
+                  className="slide"
+                  style={{ transform: `translateX(-${locationSlide * 100}%)` }}
+                >
+                  <div className="snap-location">
+                    <img src={papanui} className="location-image" />
+                    <div className="location-name">
+                      <img src={snap_logo} />
+                      <div className="branch">Papanui</div>
+                    </div>
                   </div>
-                  <ul className="guideline-points">
-                    {guideline.structure.map(point => <li>{point}</li>)}
-                  </ul>
                 </div>
-                <div className="guideline-image-wrapper">
-                  <img src={guideline.title=="Muscle Gain" ? muscle : tape} className="guideline-icon" />
-                  {guideline.centerCard ?
-                    <img src={muscle} className="guideline-icon"/> : ""}
+                <div
+                  className="slide"
+                  style={{ transform: `translateX(-${locationSlide * 100}%)` }}
+                >
+                  <div className="snap-location">
+                    <img src={barrington} className="location-image" />
+                    <div className="location-name">
+                      <img src={snap_logo} />
+                      <div className="branch">Barrington</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
       <div className="pt-section">
-        <div className="section-column">
-          <div className="snap-locations">
-            <div className="snap-location">
-              <img src={hornby} className="location-image" />
-              <div className="location-name">
-                <img src={snap_logo} />
-                <div className="branch">Hornby</div>
-              </div>
-            </div>
-            <div className="snap-location">
-              <img src={papanui} className="location-image" />
-              <div className="location-name">
-                <img src={snap_logo} />
-                <div className="branch">Papanui</div>
-              </div>
-            </div>
-            <div className="snap-location">
-              <img src={barrington} className="location-image" />
-              <div className="location-name">
-                <img src={snap_logo} />
-                <div className="branch">Barrington</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="section-column"></div>
       </div>
     </div>
   );
