@@ -41,16 +41,20 @@ function Process() {
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">
-              Comprehensive Consultation Process:
-            </div>
             <div className="slide-content">
               <img src={slide1Photo}></img>
               <span>
-                I'm a good listener and will spend time with you to understand
-                your goals, medical history, injuries, lifestyle and fitness
-                background. This ensures that your program is tailored precisely
-                to your needs and aspirations.
+              <div class="triangle-cutoff top left"></div>
+              <div class="triangle-cutoff bottom right"></div>
+                <div className="slide-header">
+                  Comprehensive Consultation Process:
+                </div>
+                <div class="slide-text">
+                  I'm a good listener and will spend time with you to understand
+                  your goals, medical history, injuries, lifestyle and fitness
+                  background. This ensures that your program is tailored precisely
+                  to your needs and aspirations.
+                </div>
               </span>
             </div>
           </div>
@@ -58,15 +62,19 @@ function Process() {
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Finding Your Sweet Spot:</div>
             <div className="slide-content">
               <img src={slide2Photo}></img>
               <span>
-                Your training experience is unique to you, and I’ll help you
-                find the perfect balance between aesthetics (how you want to
-                look), escapism (creating a space to focus and unwind),
-                education (learning the &#39;why&#39; behind each movement), and
-                entertainment (keeping things fun and engaging).
+              <div class="triangle-cutoff top left"></div>
+              <div class="triangle-cutoff bottom right"></div>
+                <div className="slide-header">Finding Your Sweet Spot:</div>
+                <div class="slide-text">
+                  Your training experience is unique to you, and I’ll help you
+                  find the perfect balance between aesthetics (how you want to
+                  look), escapism (creating a space to focus and unwind),
+                  education (learning the &#39;why&#39; behind each movement), and
+                  entertainment (keeping things fun and engaging).
+                </div>
               </span>
             </div>
           </div>
@@ -74,15 +82,19 @@ function Process() {
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Progress Reviews:</div>
             <div className="slide-content">
               <img src={slide3Photo}></img>
 
               <span>
-                I’ll have regular check-ins to track your progress, identify
-                what’s helping or hindering your journey, and adjust your plan.
-                This ensures we stay focused, motivated, and aligned with your
-                evolving fitness goals.
+              <div class="triangle-cutoff top left"></div>
+              <div class="triangle-cutoff bottom right"></div>
+                <div className="slide-header">Progress Reviews:</div>
+                <div class="slide-text">
+                  I’ll have regular check-ins to track your progress, identify
+                  what’s helping or hindering your journey, and adjust your plan.
+                  This ensures we stay focused, motivated, and aligned with your
+                  evolving fitness goals.
+                </div>
               </span>
             </div>
           </div>
@@ -90,13 +102,17 @@ function Process() {
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">Nutritional Intervention:</div>
             <div className="slide-content">
               <img src={slide4Photo}></img>
               <span>
-                Together, we’ll assess your eating habits, review your food log,
-                and choose simple, effective nutritional strategies that fit
-                your lifestyle and are sustainable for the long term.
+              <div class="triangle-cutoff top left"></div>
+              <div class="triangle-cutoff bottom right"></div>
+                <div className="slide-header">Nutritional Intervention:</div>
+                <div class="slide-text">
+                  Together, we’ll assess your eating habits, review your food log,
+                  and choose simple, effective nutritional strategies that fit
+                  your lifestyle and are sustainable for the long term.
+                </div>
               </span>
             </div>
           </div>
@@ -104,16 +120,20 @@ function Process() {
             className="slide"
             style={{ transform: `translateX(-${slide * 100}%)` }}
           >
-            <div className="slide-header">
-              Encouragement, Support, and Motivation:
-            </div>
             <div className="slide-content">
               <img src={slide5Photo}></img>
               <span>
-                I’m here to motivate you every step of the way, providing
-                positive reinforcement and accountability through regular chats
-                and reminders, helping you stay on track and unlock the best
-                version of yourself.
+                <div class="triangle-cutoff top left"></div>
+                <div class="triangle-cutoff bottom right"></div>
+                <div className="slide-header">
+                  Encouragement, Support, and Motivation:
+                </div>
+                <div class="slide-text">
+                  I’m here to motivate you every step of the way, providing
+                  positive reinforcement and accountability through regular chats
+                  and reminders, helping you stay on track and unlock the best
+                  version of yourself.
+                </div>
               </span>
             </div>
           </div>

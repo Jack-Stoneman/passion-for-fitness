@@ -4,15 +4,16 @@ import welcomeVideo from "./assets/master.mp4";
 function Welcome() {
   return (
     <div id="welcome">
-      <div className="logo-container">
-        <span className="logo" />
-      </div>
       <div className="content-wrapper">
         <div className="welcome-text-wrapper">
-          <div className="welcome-title">Your Journey, My Passion</div>
+          <div className="welcome-header">
+            <span className="logo" />
+            <div className="welcome-header-text">
+              <div className="welcome-title">Your Journey, My Passion</div>
+              <div className="welcome-subtitle">Welcome to passionforfitness.net</div>
+            </div>
+          </div>
           <div className="welcome-message">
-            Welcome to passionforfitness.net <br />
-            <br />
             If you’re serious about achieving your health and fitness goals and
             looking for structured training programs, exercise selection,
             nutritional advice and motivation for a stronger, fitter and

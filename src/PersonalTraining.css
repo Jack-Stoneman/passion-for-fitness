@@ -119,6 +119,7 @@
     border-radius: 25px;
     gap: 10px;
     flex-grow: 1;
+    height: 300px;
 }
 
 .duration-wrapper {
@@ -197,7 +198,7 @@
 
 #personalTraining .slides {
     width: 560px;
-    height: 340px;
+    height: 350px;
 }
 
 .pt-carousel-wrapper {
