@@ -31,15 +31,14 @@
     width: 222.25px;
     height: 201.5px;
     display: block;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .welcome-text-wrapper {
-    width:900px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    max-width: calc(99vw - 600px);
 }
 
 .welcome-title {
@@ -60,7 +59,7 @@
 
 .content-wrapper {
     display: flex;
-    gap:50px;
+    gap: 50px;
 }
 
 .welcome-video {
@@ -80,3 +79,16 @@
     justify-content: space-around;
 }
 
+@media (max-width: 1515px) {
+    .welcome-title {
+        font-size: 3.2vw;
+    }
+
+    .welcome-subtitle {
+        font-size: 2.5vw;
+    }
+
+    .welcome-message {
+        font-size: 1.8vw;
+    }
+}
