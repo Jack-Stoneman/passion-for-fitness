@@ -7,9 +7,11 @@
 .about-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 50px;
-    column-gap: 20px;
+    padding: 0px 50px;
+    gap: 100px;
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .about-content > * {
@@ -25,14 +27,59 @@
     display: flex;
     width: 500px;
     flex-direction: column;
+    gap: 25px;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.about-text.expand {
+    font-size: 16px;
     gap: 15px;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: 600;
+}
+
+.about-text.expand .subtitle {
+    font-size: 24px;
 }
 
 .qualifications {
     width: 400px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;  
+}
+
+#about .welcome-list li {
+    font-size: 24px;
+    padding: 10px 20px;
+}
+
+.dumbell-banner {
+    display: flex;
+    gap: 10px;
+}
+
+.banner-dumbell {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0);
+}
+
+.horizontal-line {
+    flex-grow: 1;
+    height: 50%;
+    border-bottom: 2px solid black;
+}
+
+.dumbell-banner.bottom {
+    margin-top: auto;
+}
+
+#about .hover-button {
+    margin-top: auto;
 }

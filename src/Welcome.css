@@ -28,10 +28,11 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 175px;
-    height: 175px;
+    width: 222.25px;
+    height: 201.5px;
     display: block;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .welcome-text-wrapper {
@@ -45,20 +46,16 @@
     font-size: 52px;
     font-weight: 600;
     margin-bottom: 10px;
-    //font-style: italic;
 }
 
 .welcome-subtitle {
     font-size: 38px;
-    //font-style: italic;
     margin-bottom: 10px;
 }
 
 .welcome-message {
     font-size: 28px;
     max-width: 900px;
-    /* font-style: italic; */
-    text-align: justify;
 }
 
 .content-wrapper {
@@ -67,13 +64,14 @@
 }
 
 .welcome-video {
-    height: 650px;
+    height: 800px;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .welcome-header {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .welcome-header-text {

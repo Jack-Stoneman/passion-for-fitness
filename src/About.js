@@ -3,6 +3,7 @@ import aboutPhoto from "./assets/gym-photos/DSC01257.jpg";
 import { useState } from "react";
 import { useTransition } from "react";
 import Gallery from "./Gallery";
+import dumbell from "./assets/dumbell.svg";
 
 const initialText = `Hi! I’m Ramesh and am a qualified personal trainer and fitness
                      leader based in Christchurch, New Zealand. I currently provide
@@ -69,10 +70,14 @@ function About() {
           interval={3000}
           width={500}
         />
-        <div className="about-text">
+        <div className={`about-text ${showMore ? "expand" : ""}`}>
+          <div class="dumbell-banner top">
+            <div className="horizontal-line"></div>
+            <img src={dumbell} class="banner-dumbell"></img>
+            <div className="horizontal-line"></div>
+          </div>
           <div className="subtitle">Who am I?</div>
-          <span>{initialText}</span>
-          {showMore && (
+          {showMore ? (
             <span>
               {furtherText.map((text) => {
                 return (
@@ -84,14 +89,26 @@ function About() {
                 );
               })}
             </span>
+          ) : (
+            <span>{initialText}</span>
           )}
           <button className="hover-button" onClick={handleClick}>
             <span class="text">
               {showMore ? "Hide extra details" : "Learn more about me"}
             </span>
           </button>
+          <div class="dumbell-banner bottom">
+            <div className="horizontal-line"></div>
+            <img src={dumbell} class="banner-dumbell"></img>
+            <div className="horizontal-line"></div>
+          </div>
         </div>
         <div className="qualifications">
+          <div class="dumbell-banner top">
+            <div className="horizontal-line"></div>
+            <img src={dumbell} class="banner-dumbell"></img>
+            <div className="horizontal-line"></div>
+          </div>
           <div className="subtitle">Qualifications</div>
           <ul className="welcome-list">
             <li>
@@ -132,6 +149,11 @@ function About() {
               </span>
             </li>
           </ul>
+          <div class="dumbell-banner bottom">
+            <div className="horizontal-line"></div>
+            <img src={dumbell} class="banner-dumbell"></img>
+            <div className="horizontal-line"></div>
+          </div>
         </div>
         {/* <div className="carousel">
           <span className="arrow" onClick={nextSlide} />
