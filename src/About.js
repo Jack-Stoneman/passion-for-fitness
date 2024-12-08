@@ -1,5 +1,12 @@
 import "./About.css";
-import aboutPhoto from "./assets/gym-photos/DSC01257.jpg";
+import photo1 from "./assets/gym-photos/DSC01257.jpg";
+import photo2 from "./assets/gym-photos/DSC00707.jpg";
+import photo3 from "./assets/gym-photos/DSC00699.jpg";
+import photo4 from "./assets/gym-photos/DSC00822.jpg";
+import photo5 from "./assets/gym-photos/DSC00634.jpg";
+import photo6 from "./assets/gym-photos/IMG_8453.jpg";
+import photo7 from "./assets/gym-photos/IMG_8407.jpg";
+import extraPhoto from "./assets/gym-photos/DSC00805.jpg";
 import { useState } from "react";
 import { useTransition } from "react";
 import Gallery from "./Gallery";
@@ -14,7 +21,7 @@ const initialText = `Hi! I’m Ramesh and am a qualified personal trainer and fi
                      to lose weight, gain muscle, improve their health, feel better
                      or any other fitness goals.`,
   furtherText = [
-    `I’ve been a sports enthusiast all my life and have dedicated
+    `I’ve been a fitness and sports enthusiast all my life and have dedicated
                 many years to strength training, high-altitude trekking,
                 mountaineering and living a fit and healthy lifestyle. I spent 3
                 years in the military, which instilled good discipline and
@@ -22,7 +29,7 @@ const initialText = `Hi! I’m Ramesh and am a qualified personal trainer and fi
                 to foster a mindset of perseverance and self-discipline in my
                 clients.`,
     `My fitness qualifications include Level 4 and Level 5 NZ
-                Certificates in Exercise and additional training certifications
+                Certificates in Exercise, Performance Nutrition Coach (Level 1 & 2), and additional training certifications
                 in Strength & Mobility, Power & Plyometrics,
                 Kettlebells, and Trainer-Assisted Stretching. Outside of
                 personal training, I hold post-graduate degrees from Oxford
@@ -40,7 +47,7 @@ const initialText = `Hi! I’m Ramesh and am a qualified personal trainer and fi
 function About() {
   const [slide, setSlide] = useState(0);
   const [isPending, startTransition] = useTransition();
-  const slideCount = 3;
+  const slideCount = 7;
   const [showMore, setShowMore] = useState(false);
 
   const nextSlide = () => {
@@ -66,9 +73,10 @@ function About() {
       <div className="section-header">ABOUT ME</div>
       <div className="about-content">
         <Gallery
-          images={[aboutPhoto, aboutPhoto, aboutPhoto]}
+          images={[photo1, photo2, photo3, photo4, photo5, photo6, photo7]}
           interval={3000}
           width={500}
+          height={750}
         />
         <div className={`about-text ${showMore ? "expand" : ""}`}>
           <div class="dumbell-banner top">
@@ -110,45 +118,54 @@ function About() {
             <div className="horizontal-line"></div>
           </div>
           <div className="subtitle">Qualifications</div>
-          <ul className="welcome-list">
-            <li>
-              <span className="bullet"></span>
-              <span className="bullet-text">
-                Level 4 & Level 5 NZ Certificate in Exercise (Fitness Leadership
-                & Personal Training)
-              </span>
-            </li>
-            <li>
-              <span className="bullet"></span>
-              <span className="bullet-text">Kettlebell Training</span>
-            </li>
-            <li>
-              <span className="bullet"></span>
-              <span className="bullet-text">Power & Plyometrics Training</span>
-            </li>
-            <li>
-              <span className="bullet"></span>
-              <span className="bullet-text">Strength Training</span>
-            </li>
-            <li>
-              <span className="bullet"></span>
-              <span className="bullet-text">
-                Pre/Post Pregnancy Exercise Training
-              </span>
-            </li>
-            <li>
-              <span className="bullet"></span>
-              <span className="bullet-text">
-                Trainer-Assisted Stretching (TAS)
-              </span>
-            </li>
-            <li>
-              <span className="bullet"></span>
-              <span className="bullet-text">
-                Current First Aid Certificate & CPR Training
-              </span>
-            </li>
-          </ul>
+          <div className="qualifications-content">
+            <ul className="welcome-list">
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">
+                  Level 4 & Level 5 NZ Certificate in Exercise (Fitness Leadership
+                  & Personal Training)
+                </span>
+              </li>
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">
+                  Performance Nutrition Coach (Level 1 & 2)
+                </span>
+              </li>
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">Kettlebell Training</span>
+              </li>
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">Power & Plyometrics Training</span>
+              </li>
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">Strength Training</span>
+              </li>
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">
+                  Pre/Post Pregnancy Exercise Training
+                </span>
+              </li>
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">
+                  Trainer-Assisted Stretching (TAS)
+                </span>
+              </li>
+              <li>
+                <span className="bullet"></span>
+                <span className="bullet-text">
+                  Current First Aid Certificate & CPR Training
+                </span>
+              </li>
+            </ul>
+            <img src={extraPhoto} class="qualifications-img"></img>
+          </div>
           <div class="dumbell-banner bottom">
             <div className="horizontal-line"></div>
             <img src={dumbell} class="banner-dumbell"></img>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Gallery.css";
 
-const Gallery = ({ images, interval = 3000, width = 1000 }) => {
+const Gallery = ({ images, interval = 3000, width = 1000, height = 1500 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const timerRef = useRef(null);
@@ -36,7 +36,7 @@ const Gallery = ({ images, interval = 3000, width = 1000 }) => {
       className="photo-gallery"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ width: width + "px" }}
+      style={{ width: width + "px", height: height + "px" }}
     >
       <span className="arrow prev" onClick={goToPrevious} />
       <div
@@ -50,7 +50,7 @@ const Gallery = ({ images, interval = 3000, width = 1000 }) => {
               index === currentIndex ? "active" : ""
             }`}
           >
-            <img loading="lazy" src={image} alt={`Slide ${index + 1}`} />
+            <img loading="lazy" src={image} alt={`Slide ${index + 1}`} style={{ width: width + "px", height: height + "px" }}/>
           </div>
         ))}
       </div>
