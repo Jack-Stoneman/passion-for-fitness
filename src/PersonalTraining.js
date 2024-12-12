@@ -18,7 +18,7 @@ const pricing = [
       "Minimum 2 sessions/week*",
       "60 mins per session",
       "Full package & coaching support",
-      "Train at Hornby, Papanui or Barrington gyms",
+      "Full 24/7 access to our Hornby gym",
     ],
   },
   {
@@ -35,8 +35,10 @@ const pricing = [
 ];
 
 const trainingList = {
-  "Custom monthly exercise plans & programs":
+  "Customised monthly training programs":
     "Tailored to your goals and progress, updated each month for optimal results.",
+  "Boxfit sessions included":
+    "Boxfit will be incorporated into your training sessions. It is an excellent way to improve your strength and coordination, relieve stress and increase your fitness levels.",
   "Monthly progress reviews":
     "Track your achievements, stay on course, and make adjustments as needed.",
   "Free fitness app":
@@ -124,7 +126,9 @@ function PersonalTraining() {
   };
   return (
     <div id="personalTraining" className="section blue">
-      <div className="section-header">1:1 TRAINING</div>
+      <div className="section-header">
+        1:1 PERSONAL TRAINING (CHRISTCHURCH){" "}
+      </div>
       <div className="pt-section">
         <div className="section-column">
           <div className="bold">
@@ -250,7 +254,7 @@ function PersonalTraining() {
             </div>
           </div>
           <div className="pt-carousel-wrapper">
-            <div className="bold">Snap Fitness locations:</div>
+            <div className="bold">Snap Fitness 24/7 location:</div>
             <div className="carousel">
               <span
                 className="arrow"
@@ -285,7 +289,7 @@ function PersonalTraining() {
                     <img src={papanui} className="location-image" />
                     <div className="location-name">
                       <img src={snap_logo} />
-                      <div className="branch">Papanui</div>
+                      <div className="branch">Hornby</div>
                     </div>
                   </div>
                 </div>
@@ -297,7 +301,7 @@ function PersonalTraining() {
                     <img src={barrington} className="location-image" />
                     <div className="location-name">
                       <img src={snap_logo} />
-                      <div className="branch">Barrington</div>
+                      <div className="branch">Hornby</div>
                     </div>
                   </div>
                 </div>

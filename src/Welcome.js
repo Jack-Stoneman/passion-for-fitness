@@ -10,22 +10,25 @@ function Welcome() {
             <span className="logo" />
             <div className="welcome-header-text">
               <div className="welcome-title">Your Journey, My Passion</div>
-              <div className="welcome-subtitle">Welcome to passionforfitness.net</div>
+              <div className="welcome-subtitle">
+                Welcome to passionforfitness.net
+              </div>
             </div>
           </div>
           <div className="welcome-message">
             If you’re serious about achieving your health and fitness goals and
-            looking for structured training programs, exercise selection,
-            nutritional advice and motivation for a stronger, fitter and
-            healthier you, come work with me. <br />
+            are looking for a trusted, results-driven coach to help you with
+            structured training programs, exercise selection, nutritional advice
+            and motivation for a stronger, fitter and healthier you, then come
+            work with me. <br />
             <br />
             Whether you’re a beginner, a habitual exerciser wanting better
-            results or looking to train again after a long layoff or injuries, I
-            can help you train hard, have fun, keep you safe and motivate you to
-            achieve the results you’re looking for. My training programs have a
-            strong focus on performing exercises with the correct form and
-            technique to optimise muscle growth and minimise the risk of
-            injuries.
+            results or looking to train again after a long layoff or injury, I
+            can help you make steady progress and prescribe training programs
+            that are fun and energising, keep you safe, and motivate you to
+            achieve the results you're looking for. My sessions have a strong
+            focus on performing exercises with the correct form and technique to
+            optimise muscle growth and minimise the risk of injuries.
           </div>
         </div>
         <video className="welcome-video" autoPlay muted loop controls>

@@ -20,7 +20,7 @@ function Navbar() {
           <div className="options-wrapper">
             <span className="link-header">Personal Training</span>
             <div className="options">
-              <a href="#personalTraining">1:1 Training</a>
+              <a href="#personalTraining">1:1 In-Person Training</a>
               <a href="#onlineTraining">Online Training</a>
             </div>
           </div>

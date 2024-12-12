@@ -28,7 +28,6 @@ root.render(
     <PersonalTraining />
     <OnlineTraining />
     <TestimonialCarousel />
-    <Calendar />
     <Contact />
   </React.StrictMode>
 );
