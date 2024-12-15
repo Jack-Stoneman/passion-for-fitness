@@ -11,9 +11,9 @@
     width: 400px;
     max-width: 95%;
     padding: 40px;
-    background: #fff;
+    background: var(--central-blue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color: #000
+    color: #fff 
 }
 
 .form-wrapper {
@@ -22,12 +22,18 @@
     row-gap: 10px;
 }
 
+::placeholder {
+    color: #fff;
+}
+
 #contact input, #contact textarea, #contact select {
     border: none;
-    border-bottom: 3px solid rgba(0,0,0,0.2);
+    border-bottom: 3px solid #fff;
     font-size: 16px;
     padding: 10px 0px;
     width: 100%;
+    background: transparent;
+    color: #fff
 }
 
 #contact input, #contact textarea {
@@ -36,11 +42,11 @@
 
 #contact input:focus, #contact textarea:focus, #contact select:focus {
     outline: none;
-    border-bottom: 3px solid var(--central-blue);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 #contact input:hover, #contact textarea:hover, #contact select:hover {
-    border-bottom: 3px solid var(--central-blue);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 #contact select option {
@@ -122,10 +128,19 @@ label:not(:first-of-type) {
 
 .middle-divider {
     width: 10px;
+    position: relative;
 }
 
 .divider {
     width: 50%;
-    border-right: 1px solid black;
+    border-right: 2px solid black;
     height: 100%;
+}
+
+#contact .dumbell-wrapper {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    background: #fff;
+    padding: 10px 0px;
 }

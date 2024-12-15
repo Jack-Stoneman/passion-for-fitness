@@ -2,6 +2,7 @@ import "./Contact.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { InlineWidget } from "react-calendly";
+import dumbell from "./assets/dumbell.svg";
 
 const formSuccessMessage =
   "Thanks for your submission! I'll get back to you as soon as possible.";
@@ -44,7 +45,7 @@ function Contact() {
       <div className="section-header">CONTACT</div>
       <div className="contact-wrapper">
         <div className="enquiry-form-wrapper">
-          <div className="section-header">ENQUIRE NOW</div>
+          <div className="sub-header">ENQUIRE NOW</div>
           <div className="contact-form">
             <div className="form-wrapper">
               <form ref={form} onSubmit={sendEmail}>
@@ -92,7 +93,10 @@ function Contact() {
                   placeholder="Enter your question"
                   required
                 />
-                <button className="submit-button hover-button" type="submit">
+                <button
+                  className="submit-button hover-button white"
+                  type="submit"
+                >
                   <span className="text">Send</span>
                 </button>
               </form>
@@ -101,9 +105,12 @@ function Contact() {
         </div>
         <div className="middle-divider">
           <div className="divider"></div>
+          <div className="dumbell-wrapper">
+            <img src={dumbell} className="banner-dumbell" />
+          </div>
         </div>
         <div className="calendar-content-wrapper">
-          <div className="calendar-title section-header">BOOK A CALL</div>
+          <div className="calendar-title sub-header">BOOK A CALL</div>
           <div className="calendly-wrapper">
             <InlineWidget
               url="https://calendly.com/jestoneman/30min"

@@ -50,13 +50,22 @@ code {
   font-size: 20px;
 }
 
+.hover-button.white {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
 .hover-button .text {
   position: relative;
   z-index: 1;
 }
 
 .hover-button:hover {
-    color: #fff;
+  color: #fff;
+}
+
+.hover-button.white:hover {
+  color: #000;
 }
 
 .hover-button::after {
@@ -72,6 +81,10 @@ code {
   transition: transform 0.5s ease; /* Animate the transform */
 }
 
+.hover-button.white::after {
+  background: #fff;
+}
+
 .hover-button:hover::after {
   transform: scaleX(1); /* Fill the container on hover */
 }
@@ -83,6 +96,12 @@ code {
 
 .section-header {
   font-size: 48px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.sub-header {
+  font-size: 38px;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
