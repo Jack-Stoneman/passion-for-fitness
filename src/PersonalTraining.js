@@ -9,6 +9,34 @@ import muscle from "./assets/strength.svg";
 import hornby from "./assets/Hornby.png";
 import barrington from "./assets/Barrington.png";
 import papanui from "./assets/Papanui.png";
+import extra_photo from "./assets/gym-photos/DSC01031.jpg";
+
+const faq = [
+  {
+    q: "Who is this 12-16 week transformation program for?",
+    a: "This program is perfect for anyone ready to see real transformation from fat loss, muscle gain, core strengthening and better cardiovascular fitness.",
+  },
+  {
+    q: "What does the free membership for non-members include?",
+    a: "With 1:1 in-person training, non-members will gain access to SnapFitness 24/7 gym in Hornby.  Outside your 1:1 sessions, you'll have the flexibility to train at other SnapFitness 24/7 locations in Christchurch for the duration of your program.",
+  },
+  {
+    q: "How are the exercise plans and programs created?",
+    a: "I create customised monthly plans tailored to your goals, current fitness level, and progress. These will adjust as you move forward, ensuring you’re always challenged but supported.",
+  },
+  {
+    q: "Will I get nutrition guidance?",
+    a: "Yes! Alongside exercise plans, you’ll receive nutrition advice and tracking options to align with your fitness goals and ensure sustainable results.",
+  },
+  {
+    q: "What if I can’t make a session?",
+    a: "Life happens! We can reschedule with 24 hours notice, so you stay on track without missing out on valuable training time.",
+  },
+  {
+    q: "Can I track my progress outside of sessions?",
+    a: "Absolutely! The free fitness app allows you to monitor progress, track workouts, and stay connected, keeping you focused and engaged.",
+  },
+];
 
 const pricing = [
   {
@@ -98,6 +126,16 @@ function PersonalTraining() {
   const [locationSlide, setLocationSlide] = useState(0);
   const [isPending, startTransition] = useTransition();
   const slideCount = 3;
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = (e) => {
+    const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+    if (bottom) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }
 
   const nextSlide = (slide, slideSetter) => {
     startTransition(() => slideSetter((slide + 1) % slideCount));
@@ -253,6 +291,11 @@ function PersonalTraining() {
               </div>
             </div>
           </div>
+          <img className="training-image" src={extra_photo} />
+        </div>
+      </div>
+      <div className="pt-section">
+        <div className="section-column row-wrap">
           <div className="pt-carousel-wrapper">
             <div className="bold">Snap Fitness 24/7 location:</div>
             <div className="carousel">
@@ -308,10 +351,21 @@ function PersonalTraining() {
               </div>
             </div>
           </div>
+          <div className="pt-carousel-wrapper">
+            <div className="bold">Frequently Asked Questions:</div>
+            <div className="faq-wrapper">
+              <div className="faq" onScroll={handleScroll}>
+                <div className={`arrow ${scrolled ? "hide" : ""}`}></div>
+                {faq.map(point =>
+                  <div className="faq-point">
+                    <div className="question">{point.q}</div>
+                    <div className="answer">{point.a}</div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="pt-section">
-        <div className="section-column"></div>
       </div>
     </div>
   );

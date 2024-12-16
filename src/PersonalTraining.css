@@ -177,6 +177,8 @@
 
 .snap-location .location-image {
     width: 100%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .location-name .branch {
@@ -213,4 +215,75 @@
     align-items: center;
     gap: 30px;
 }
+
+.training-image {
+    width: 560px;
+    border-radius: 25px;
+}
+
+.faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    position: relative;
+}
+
+.faq {
+    width: 560px;
+    height: 340px;
+    overflow: auto;
+    background: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #000;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq .question {
+    color: var(--central-blue);
+    font-weight: 600;
+}
+
+.faq .answer {
+    padding: 10px 0px 0px 20px;
+}
+
+.faq .arrow {
+    transform: rotate(90deg);
+    top: auto;
+    right: 50%;
+    bottom: 20px;
+    background-color: var(--central-blue);
+    opacity: 1;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+.faq .arrow.hide {
+    display: none;
+}
+
+@keyframes bounce {
+    0% {
+      transform: rotate(90deg) translateY(0);
+    }
+    25% {
+      transform: translateY(-30px) rotate(90deg) ;
+    }
+    50% {
+      transform: rotate(90deg) translateY(0);
+    }
+    75% {
+      transform: rotate(90deg) translateY(0px);
+    }
+    100% {
+      transform: rotate(90deg) translateY(0);
+    }
+  }
 

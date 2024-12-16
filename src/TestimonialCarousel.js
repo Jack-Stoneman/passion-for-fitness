@@ -57,7 +57,7 @@ function TestimonialCarousel() {
       <div className="section-header">TESTIMONIALS</div>
       <div
         className="carousel-wrapper"
-        style={{ maxWidth: `${maxWidth + 460}px` }}
+        style={{ maxWidth: `${maxWidth + 500}px` }}
       >
         <span className="arrow prev" onClick={prevTestimonial} />
         <div className="carousel">
@@ -72,7 +72,6 @@ function TestimonialCarousel() {
               >
                 <div className="testimonial-header">
                   <div className="testimonial-name">{testimonial.name}</div>
-                  <div className="job-title">{testimonial.job}</div>
                 </div>
                 <div className="testimonial-body">{testimonial.body}</div>
               </div>
