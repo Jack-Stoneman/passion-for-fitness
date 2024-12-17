@@ -2,7 +2,8 @@ import "./Contact.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { InlineWidget } from "react-calendly";
-import dumbell from "./assets/dumbell.svg";
+import instagram from "./assets/instagram.svg";
+import email from "./assets/email.svg";
 
 const formSuccessMessage =
   "Thanks for your submission! I'll get back to you as soon as possible.";
@@ -45,7 +46,7 @@ function Contact() {
       <div className="section-header">CONTACT</div>
       <div className="contact-wrapper">
         <div className="enquiry-form-wrapper">
-          <div className="sub-header">ENQUIRE NOW</div>
+          <div className="sub-header">GENERAL ENQUIRIES</div>
           <div className="contact-form">
             <div className="form-wrapper">
               <form ref={form} onSubmit={sendEmail}>
@@ -105,8 +106,9 @@ function Contact() {
         </div>
         <div className="middle-divider">
           <div className="divider"></div>
-          <div className="dumbell-wrapper">
-            <img src={dumbell} className="banner-dumbell" />
+          <div className="icons-wrapper">
+            <a href="https://www.instagram.com/passionforfitness2024?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="__blank"><img src={instagram} /></a>
+            <a href="mailto:passionforfitness.nz@gmail.com"><img src={email} /></a>
           </div>
         </div>
         <div className="calendar-content-wrapper">

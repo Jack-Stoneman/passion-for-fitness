@@ -220,7 +220,7 @@ function PersonalTraining() {
             ))}
           </div>
           <div className="small-note">
-            * For meaningful progress, clients should commit to a minimum of 2
+            * It is recommended that clients commit to a minimum of 2
             personal training sessions per week, supplemented by independent
             workouts or activity outside of sessions.
           </div>

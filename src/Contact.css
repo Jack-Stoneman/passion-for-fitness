@@ -147,12 +147,22 @@ label:not(:first-of-type) {
     height: 100%;
 }
 
-#contact .dumbell-wrapper {
+#contact .icons-wrapper {
     position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
+    top: calc(50% - 90px);
+    left: calc(50% - 35px);
     background: #fff;
     padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact .icons-wrapper img {
+    width: 70px;
+}
+#contact .icons-wrapper img:hover {
+    opacity: 0.8;
 }
 
 select option, select optgroup {

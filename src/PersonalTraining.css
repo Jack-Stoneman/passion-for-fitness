@@ -48,6 +48,12 @@
     border-top: 5px solid var(--snap-red);
     border-bottom: 5px solid var(--snap-red);
     gap: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.pricing-container:last-of-type {
+    text-transform: none;
 }
 
 .snap-logo {
@@ -98,7 +104,7 @@
 }
 
 .small-note {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: auto;
 }
 

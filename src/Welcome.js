@@ -118,7 +118,7 @@ function Welcome() {
             that are fun and energising, keep you safe, and motivate you to
             achieve the results you're looking for. My sessions have a strong
             focus on performing exercises with the correct form and technique to
-            optimise muscle growth and minimise the risk of injuries.
+            optimise muscle growth and minimise the risk of injury.
           </div>
         </div>
         <video className="welcome-video" autoPlay muted loop controls>
