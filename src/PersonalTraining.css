@@ -275,6 +275,20 @@
     display: none;
 }
 
+.faq .answer ul li {
+    padding: 5px 0px;
+}
+
+.faq .answer a {
+    text-decoration: none;
+    color: var(--central-blue);
+    font-weight: 600;
+}
+
+.faq .answer a:hover {
+    opacity: 0.8;
+}
+
 @keyframes bounce {
     0% {
       transform: rotate(90deg) translateY(0);

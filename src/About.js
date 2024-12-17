@@ -117,7 +117,7 @@ function About() {
             <img src={dumbell} class="banner-dumbell"></img>
             <div className="horizontal-line"></div>
           </div>
-          <div className="subtitle">Qualifications</div>
+          <div className="section-header">Qualifications</div>
           <div className="qualifications-content">
             <ul className="welcome-list">
               <li>
