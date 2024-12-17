@@ -16,11 +16,13 @@ import PersonalTraining from "./PersonalTraining";
 import OnlineTraining from "./OnlineTraining";
 import Specialisation from "./Specialisation";
 import TestimonialCarousel from "./TestimonialCarousel";
+import Banner from "./Banner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Navbar />
+    <Banner />
     <Welcome />
     <Specialisation />
     <Process />

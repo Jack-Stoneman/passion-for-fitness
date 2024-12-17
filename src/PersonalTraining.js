@@ -128,6 +128,10 @@ function PersonalTraining() {
   const slideCount = 3;
   const [scrolled, setScrolled] = useState(false);
 
+  const scrollContainer = (e) => {
+    e.target.parentElement.scroll({ top: e.target.parentElement.scrollHeight, behavior: 'smooth' })
+  }
+
   const handleScroll = (e) => {
     const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
     if (bottom) {
@@ -355,7 +359,7 @@ function PersonalTraining() {
             <div className="bold">Frequently Asked Questions:</div>
             <div className="faq-wrapper">
               <div className="faq" onScroll={handleScroll}>
-                <div className={`arrow ${scrolled ? "hide" : ""}`}></div>
+                <div className={`arrow ${scrolled ? "hide" : ""}`} onClick={scrollContainer}></div>
                 {faq.map(point =>
                   <div className="faq-point">
                     <div className="question">{point.q}</div>
