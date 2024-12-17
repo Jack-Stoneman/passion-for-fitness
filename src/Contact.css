@@ -1,5 +1,6 @@
 #contact {
     flex-direction: column;
+    padding-bottom: 80px;
 }
 
 .contact-wrapper {

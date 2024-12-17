@@ -27,13 +27,9 @@ function Navbar() {
           <a href="#welcome" className="link-header">
             Testimonials
           </a>
-          <div className="options-wrapper">
-            <span className="link-header">Contact</span>
-            <div className="options">
-              <a href="#calendar">Book a Call</a>
-              <a href="#contact">Enquire Now</a>
-            </div>
-          </div>
+          <a href="#contact" className="link-header">
+            Contact
+          </a>
         </div>
       </div>
     </div>

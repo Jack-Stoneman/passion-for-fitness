@@ -15,8 +15,9 @@
             rgba(255,255,255,0) 100%
         ), */
         linear-gradient(315deg, hsla(208, 100%, 43%, 1) 0%, hsla(208, 100%, 17%, 1) 100%);
-    padding: 170px 0px 50px;
+    padding: 120px 0px 50px;
     position: relative;
+    overflow: hidden;
 }
 
 .logo-container {
@@ -34,7 +35,7 @@
 }
 
 .welcome-text-wrapper {
-    width: 900px;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -54,12 +55,14 @@
 
 .welcome-message {
     font-size: 28px;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .content-wrapper {
     display: flex;
     gap: 50px;
+    position: relative;
+
 }
 
 .welcome-video {
@@ -77,6 +80,46 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.welcome-points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    padding: 20px 0px;
+}
+
+.welcome-point {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.welcome-point-text {
+    line-height: 40px;
+}
+
+.welcome-dumbell {
+    height: 40px;
+    width: 20px;
+    background: url("../media/dumbell.svg") no-repeat center center;
+    background-size: contain;
+    display: block;
+    filter: grayscale(1) brightness(10);
+}
+
+.blob-container {
+    position: absolute;
+    left: -100px;
+    bottom: -200px;
+}
+
+.blob-container.top {
+    left: auto;
+    bottom: auto;
+    top: -300px;
+    right: 30%;
 }
 
 @media (max-width: 1515px) {
