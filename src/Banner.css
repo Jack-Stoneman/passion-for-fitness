@@ -16,7 +16,7 @@
 }
 
 .scrolling {
-    animation: marquee 10s linear infinite;
+    animation: marquee 20s linear infinite;
     display: inline-block;
     padding-right: 10px;
     font-size: 16px;

@@ -129,17 +129,21 @@ function PersonalTraining() {
   const [scrolled, setScrolled] = useState(false);
 
   const scrollContainer = (e) => {
-    e.target.parentElement.scroll({ top: e.target.parentElement.scrollHeight, behavior: 'smooth' })
-  }
+    e.target.parentElement.scroll({
+      top: e.target.parentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
 
   const handleScroll = (e) => {
-    const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+    const bottom =
+      e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
     if (bottom) {
       setScrolled(true);
     } else {
       setScrolled(false);
     }
-  }
+  };
 
   const nextSlide = (slide, slideSetter) => {
     startTransition(() => slideSetter((slide + 1) % slideCount));
@@ -200,7 +204,7 @@ function PersonalTraining() {
             ))}
           </ul>
         </div>
-        <div className="section-column">
+        <div className="section-column pricing">
           <div className="prices">
             {pricing.map((price) => (
               <div className="pricing-container">
@@ -220,9 +224,9 @@ function PersonalTraining() {
             ))}
           </div>
           <div className="small-note">
-            * It is recommended that clients commit to a minimum of 2
-            personal training sessions per week, supplemented by independent
-            workouts or activity outside of sessions.
+            * It is recommended that clients commit to a minimum of 2 personal
+            training sessions per week, supplemented by independent workouts or
+            activity outside of sessions.
           </div>
         </div>
       </div>
@@ -359,26 +363,54 @@ function PersonalTraining() {
             <div className="bold">Frequently Asked Questions:</div>
             <div className="faq-wrapper">
               <div className="faq" onScroll={handleScroll}>
-                <div className={`arrow ${scrolled ? "hide" : ""}`} onClick={scrollContainer}></div>
-                {faq.map(point =>
+                <div
+                  className={`arrow ${scrolled ? "hide" : ""}`}
+                  onClick={scrollContainer}
+                ></div>
+                {faq.map((point) => (
                   <div className="faq-point">
                     <div className="question">{point.q}</div>
                     <div className="answer">{point.a}</div>
                   </div>
-                )}
+                ))}
                 <div className="faq-point">
-                    <div className="question">How do I sign up?</div>
-                    <div className="answer">
-                      There are a few ways to sign up to my body transformation program:
-                      <ul>
-                        <li>Fill in the General Enquiry form at the bottom of the webpage with your contact details and I will get in touch with you within 48 hours</li>
-                        <li>Under the Book A Call section, schedule a date and time for a catch up, either via a phone call or Google video call.</li>
-                        <li>Send a DM on my Instagram page <a href="https://www.instagram.com/passionforfitness2024?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="__blank">passionforfitness2024</a></li>
-                        <li>Email me at <a href="mailto:passionforfitness.nz@gmail.com">passionforfitness.nz@gmail.com</a></li>
-                        <li>Drop by SnapFitness 24/7 in Hornby, Christchurch during operating hours and register your interest</li>
-                      </ul>
-                    </div>
+                  <div className="question">How do I sign up?</div>
+                  <div className="answer">
+                    There are a few ways to sign up to my body transformation
+                    program:
+                    <ul>
+                      <li>
+                        Fill in the General Enquiry form at the bottom of the
+                        webpage with your contact details and I will get in
+                        touch with you within 48 hours
+                      </li>
+                      <li>
+                        Under the Book A Call section, schedule a date and time
+                        for a catch up, either via a phone call or Google video
+                        call.
+                      </li>
+                      <li>
+                        Send a DM on my Instagram page{" "}
+                        <a
+                          href="https://www.instagram.com/passionforfitness2024?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                          target="__blank"
+                        >
+                          passionforfitness2024
+                        </a>
+                      </li>
+                      <li>
+                        Email me at{" "}
+                        <a href="mailto:passionforfitness.nz@gmail.com">
+                          passionforfitness.nz@gmail.com
+                        </a>
+                      </li>
+                      <li>
+                        Drop by SnapFitness 24/7 in Hornby, Christchurch during
+                        operating hours and register your interest
+                      </li>
+                    </ul>
                   </div>
+                </div>
               </div>
             </div>
           </div>
