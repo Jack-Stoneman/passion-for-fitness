@@ -55,6 +55,15 @@ code {
   color: #fff;
 }
 
+.hover-button.red {
+  border: 2px solid var(--snap-red);
+  color: var(--snap-red);
+}
+
+.section.blue .hover-button.red {
+  color: #fff;
+}
+
 .hover-button .text {
   position: relative;
   z-index: 1;
@@ -66,6 +75,10 @@ code {
 
 .hover-button.white:hover {
   color: #000;
+}
+
+.hover-button.red:hover {
+  color: #fff;
 }
 
 .hover-button::after {
@@ -83,6 +96,10 @@ code {
 
 .hover-button.white::after {
   background: #fff;
+}
+
+.hover-button.red::after {
+  background: var(--snap-red);
 }
 
 .hover-button:hover::after {

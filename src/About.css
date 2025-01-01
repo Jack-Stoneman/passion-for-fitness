@@ -71,12 +71,15 @@
     flex-basis: 350px;
     flex-grow: 1;
     max-width: 550px;
+    font-weight: 600;
 }
 
 .qualifications-img {
     flex-grow: 1;
     flex-basis: 350px;
-    max-width: min(80%, 1000px);
+    max-width: min(80%, 700px);
+    aspect-ratio: 6/5;
+    object-fit: cover;
     border-radius: 25px;
 }
 

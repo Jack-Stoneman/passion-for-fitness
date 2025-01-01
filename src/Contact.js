@@ -46,7 +46,7 @@ function Contact() {
       <div className="section-header">CONTACT</div>
       <div className="contact-wrapper">
         <div className="enquiry-form-wrapper">
-          <div className="sub-header">GENERAL ENQUIRIES</div>
+          <div className="sub-header">GENERAL ENQUIRIES / BOOKING FORM</div>
           <div className="contact-form">
             <div className="form-wrapper">
               <form ref={form} onSubmit={sendEmail}>
@@ -107,8 +107,15 @@ function Contact() {
         <div className="middle-divider">
           <div className="divider"></div>
           <div className="icons-wrapper">
-            <a href="https://www.instagram.com/passionforfitness2024?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="__blank"><img src={instagram} /></a>
-            <a href="mailto:passionforfitness.nz@gmail.com"><img src={email} /></a>
+            <a
+              href="https://www.instagram.com/passionforfitness2024?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="__blank"
+            >
+              <img src={instagram} />
+            </a>
+            <a href="mailto:passionforfitness.nz@gmail.com">
+              <img src={email} />
+            </a>
           </div>
         </div>
         <div className="calendar-content-wrapper">

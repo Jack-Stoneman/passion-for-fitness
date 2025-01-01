@@ -168,3 +168,24 @@ label:not(:first-of-type) {
 select option, select optgroup {
     color: #000;;
 }
+
+.enquiry-form-wrapper .sub-header {
+    margin-bottom: 0;
+    max-width: 400px;
+}
+
+@media (max-width: 1200px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .middle-divider {
+        width: 100%;
+    }
+
+    .icons-wrapper {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

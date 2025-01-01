@@ -21,6 +21,14 @@ const initialText = `Hi! I’m Ramesh and am a qualified personal trainer and fi
                      to lose weight, gain muscle, improve their health, feel better
                      or any other fitness goals.`,
   furtherText = [
+    `Hi! I’m Ramesh and am a qualified personal trainer and fitness
+                     leader based in Christchurch, New Zealand. I currently provide
+                     in-person training and remote coaching to individuals across
+                     different countries and time zones. Fitness has truly been my
+                     passion for more than 20 years and the biggest satisfaction for
+                     me is in helping others embark on a sustainable fitness journey
+                     to lose weight, gain muscle, improve their health, feel better
+                     or any other fitness goals.`,
     `I’ve been a fitness and sports enthusiast all my life and have dedicated
                 many years to strength training, high-altitude trekking,
                 mountaineering and living a fit and healthy lifestyle. I spent 3
@@ -123,8 +131,8 @@ function About() {
               <li>
                 <span className="bullet"></span>
                 <span className="bullet-text">
-                  Level 4 & Level 5 NZ Certificate in Exercise (Fitness Leadership
-                  & Personal Training)
+                  Level 4 & Level 5 NZ Certificate in Exercise (Fitness
+                  Leadership & Personal Training)
                 </span>
               </li>
               <li>
@@ -139,7 +147,9 @@ function About() {
               </li>
               <li>
                 <span className="bullet"></span>
-                <span className="bullet-text">Power & Plyometrics Training</span>
+                <span className="bullet-text">
+                  Power & Plyometrics Training
+                </span>
               </li>
               <li>
                 <span className="bullet"></span>

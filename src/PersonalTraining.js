@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useTransition } from "react";
 import aboutPhoto from "./assets/gallery-1.jpg";
 import snap_logo from "./assets/snap_logo.png";
+import snap_logo_white from "./assets/snap_logo_white.png";
 import clock from "./assets/clock.svg";
 import tape from "./assets/weight-loss.svg";
 import muscle from "./assets/strength.svg";
@@ -54,7 +55,7 @@ const pricing = [
     price: 95,
     points: [
       "Full 24/7 access to our Hornby gym",
-      "No joining fee",
+      "No joining fee**",
       "Minimum 2 sessions/week*",
       "60 mins per session",
       "Full package & coaching support",
@@ -66,7 +67,7 @@ const trainingList = {
   "Customised monthly training programs":
     "Tailored to your goals and progress, updated each month for optimal results.",
   "Boxfit sessions included":
-    "Boxfit will be incorporated into your training sessions. It is an excellent way to improve your strength and coordination, relieve stress and increase your fitness levels.",
+    "You have the option of incorporating Boxfit into your training sessions. It is an excellent way to improve your strength and coordination, relieve stress and increase your fitness levels.",
   "Monthly progress reviews":
     "Track your achievements, stay on course, and make adjustments as needed.",
   "Free fitness app":
@@ -172,8 +173,23 @@ function PersonalTraining() {
   };
   return (
     <div id="personalTraining" className="section blue">
-      <div className="section-header">
-        1:1 PERSONAL TRAINING (CHRISTCHURCH){" "}
+      <div className="section-header">1:1 IN-PERSON TRAINING</div>
+      <div className="header-logo">
+        <img src={snap_logo_white} class="snap-logo large" />
+        <div className="branch">Hornby</div>
+      </div>
+      <div className="pt-section top-banner">
+        <div className="section-column top-banner">
+          <div className="top-banner-text title">
+            Available to all Christchurch residents
+          </div>
+          <div className="top-banner-text sub-title">
+            Discounted rates include 24/7 gym access
+          </div>
+          <a href="#contact" className="top-banner-text sub-title">
+            Book now!
+          </a>
+        </div>
       </div>
       <div className="pt-section">
         <div className="section-column">
@@ -204,7 +220,7 @@ function PersonalTraining() {
             ))}
           </ul>
         </div>
-        <div className="section-column pricing">
+        <div className="section-column">
           <div className="prices">
             {pricing.map((price) => (
               <div className="pricing-container">
@@ -227,6 +243,8 @@ function PersonalTraining() {
             * It is recommended that clients commit to a minimum of 2 personal
             training sessions per week, supplemented by independent workouts or
             activity outside of sessions.
+            <br />
+            ** May include access card fee
           </div>
         </div>
       </div>

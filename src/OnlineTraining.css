@@ -2,3 +2,108 @@
     display: flex;
     flex-direction: column;
 }
+
+.online-packages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+}
+
+.package {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-basis: 500px;
+}
+
+.card {
+    width: min(400px, 100%);
+    border-radius: 25px;
+    position: relative;
+    background: var(--snap-red);
+}
+
+.card-header, .card-footer {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.card-header {
+    height: 60px;
+    line-height: 60px;
+}
+
+.card-footer {
+    height: 30px;
+}
+
+.card-img-wrapper {
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 12/16;
+    object-fit: cover;
+    filter: grayscale(1) brightness(0.5) blur(2px);
+    transform: scale(1.1);
+}
+
+.features {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    color: #fff;
+    text-shadow: 0px 0px 3px #000;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.price-badge {
+    position: absolute;
+    right: -40px;
+    top: -30px;
+    background: url("./assets/price-badge.svg") no-repeat center center;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(340deg);
+}
+
+.price-badge-text {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #000;
+}
+
+.package:first-child {
+    border-right: 2px solid var(--snap-red);
+}
+
+.package:last-child {
+    border-left: 2px solid var(--snap-red);
+}
+
+.book-now {
+    display: flex;
+    margin-bottom: 50px;
+}

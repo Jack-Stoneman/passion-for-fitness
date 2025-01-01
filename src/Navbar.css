@@ -19,6 +19,7 @@
     height: 100%;
     align-items: center;
     gap: 25px;
+    padding: 0px 10px;
 }
 
 .navbar-title {
