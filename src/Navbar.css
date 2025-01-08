@@ -206,3 +206,9 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .navbar-title {
+        font-size: 6vw;
+    }
+}

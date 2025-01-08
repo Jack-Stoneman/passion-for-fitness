@@ -440,6 +440,10 @@ a.top-banner-text:hover {
     .training-image, .faq {
         max-width: calc(100vw - 20px);
     }
+
+    .pt-carousel-wrapper {
+        width: 100%;
+    }
     
 }
 

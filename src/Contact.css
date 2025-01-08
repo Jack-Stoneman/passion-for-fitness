@@ -11,11 +11,12 @@
 .contact-form {
     width: 400px;
     height: 550px;
-    max-width: 95%;
+    max-width: 100%;
     padding: 40px;
     background: var(--central-blue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color: #fff 
+    color: #fff;
+    box-sizing: border-box;
 }
 
 .form-wrapper {
@@ -177,6 +178,7 @@ select option, select optgroup {
 @media (max-width: 1200px) {
     .contact-wrapper {
         flex-direction: column;
+        align-items: center;
     }
 
     .middle-divider {
@@ -187,5 +189,36 @@ select option, select optgroup {
         position: static;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .sub-header {
+        font-size: 6.5vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    .enquiry-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+
+    .contact-form {
+        height: auto;
+    }
+
+    #contact .icons-wrapper {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .calendar-content-wrapper {
+        gap: 20px;
+        padding: 0px 10px;
+        box-sizing: border-box;
     }
 }

@@ -19,7 +19,7 @@
 }
 
 .card {
-    width: min(400px, 100%);
+    width: min(400px, 85%);
     border-radius: 25px;
     position: relative;
     background: var(--snap-red);
@@ -106,4 +106,18 @@
 .book-now {
     display: flex;
     margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .online-packages {
+        gap: 50px;
+    }
+
+    .package {
+        border: none !important;
+    }
+
+    .features {
+        font-size: 5.5vw;
+    }
 }

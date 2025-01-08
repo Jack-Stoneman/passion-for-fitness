@@ -4,6 +4,10 @@
   --snap-red: #c4161c;
 }
 
+#root {
+  overflow: hidden
+}
+
 html {
   scroll-padding-top: 80px;
 }
