@@ -1,13 +1,27 @@
 import "./Navbar.css";
+import logo from "./assets/logo.jpg";
+import { useState } from "react";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  }
+
   return (
     <div className="navbar">
       <div className="inner-wrapper">
         <a className="navbar-title" href="#welcome">
           Passion For Fitness NZ
         </a>
-        <div className="navbar-links">
+        <div className={`hamburger-icon ${open ? "open": ""}`} onClick={handleClick}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className={`navbar-links ${open ? "open": ""}`}>
+          <img className="mobile-navbar-logo" src={logo}/>
           <a href="#specialisation" className="link-header">
             Specialisation
           </a>

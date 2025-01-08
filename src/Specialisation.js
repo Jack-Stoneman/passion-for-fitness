@@ -83,9 +83,9 @@ function Specialisation() {
                   <li>
                     <span className="bullet"></span>
                     <span onClick={handleClick} className="bullet-text">
-                      <span class="title-wrapper">
+                      <span className="title-wrapper">
                         <strong>{key}</strong>
-                        <span class="expand-arrow"></span>
+                        <span className="expand-arrow"></span>
                       </span>
                       <span className="additional-info">{value}</span>
                     </span>

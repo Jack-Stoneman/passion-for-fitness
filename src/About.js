@@ -87,9 +87,9 @@ function About() {
           height={750}
         />
         <div className={`about-text ${showMore ? "expand" : ""}`}>
-          <div class="dumbell-banner top">
+          <div className="dumbell-banner top">
             <div className="horizontal-line"></div>
-            <img src={dumbell} class="banner-dumbell"></img>
+            <img src={dumbell} className="banner-dumbell"></img>
             <div className="horizontal-line"></div>
           </div>
           <div className="subtitle">Who am I?</div>
@@ -109,20 +109,20 @@ function About() {
             <span>{initialText}</span>
           )}
           <button className="hover-button" onClick={handleClick}>
-            <span class="text">
+            <span className="text">
               {showMore ? "Hide extra details" : "Learn more about me"}
             </span>
           </button>
-          <div class="dumbell-banner bottom">
+          <div className="dumbell-banner bottom">
             <div className="horizontal-line"></div>
-            <img src={dumbell} class="banner-dumbell"></img>
+            <img src={dumbell} className="banner-dumbell"></img>
             <div className="horizontal-line"></div>
           </div>
         </div>
         <div className="qualifications">
-          <div class="dumbell-banner top">
+          <div className="dumbell-banner top">
             <div className="horizontal-line"></div>
-            <img src={dumbell} class="banner-dumbell"></img>
+            <img src={dumbell} className="banner-dumbell"></img>
             <div className="horizontal-line"></div>
           </div>
           <div className="section-header">Qualifications</div>
@@ -174,11 +174,11 @@ function About() {
                 </span>
               </li>
             </ul>
-            <img src={extraPhoto} class="qualifications-img"></img>
+            <img src={extraPhoto} className="qualifications-img"></img>
           </div>
-          <div class="dumbell-banner bottom">
+          <div className="dumbell-banner bottom">
             <div className="horizontal-line"></div>
-            <img src={dumbell} class="banner-dumbell"></img>
+            <img src={dumbell} className="banner-dumbell"></img>
             <div className="horizontal-line"></div>
           </div>
         </div>

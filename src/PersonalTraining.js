@@ -175,7 +175,7 @@ function PersonalTraining() {
     <div id="personalTraining" className="section blue">
       <div className="section-header">1:1 IN-PERSON TRAINING</div>
       <div className="header-logo">
-        <img src={snap_logo_white} class="snap-logo large" />
+        <img src={snap_logo_white} className="snap-logo large" />
         <div className="branch">Hornby</div>
       </div>
       <div className="pt-section top-banner">
@@ -191,8 +191,8 @@ function PersonalTraining() {
           </a>
         </div>
       </div>
-      <div className="pt-section">
-        <div className="section-column">
+      <div className="pt-section wrap">
+        <div className="section-column main-text">
           <div className="bold">
             Achieve real results with a proven program tailored just for you
           </div>
@@ -210,9 +210,9 @@ function PersonalTraining() {
               <li>
                 <span className="bullet"></span>
                 <span onClick={handleClick} className="bullet-text">
-                  <span class="title-wrapper">
+                  <span className="title-wrapper">
                     <strong>{key}</strong>
-                    <span class="expand-arrow"></span>
+                    <span className="expand-arrow"></span>
                   </span>
                   <span className="additional-info">{value}</span>
                 </span>

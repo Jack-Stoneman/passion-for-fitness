@@ -122,3 +122,17 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 0px 25px;
+    }
+    .photo-gallery {
+        max-width: 100%;
+    }
+
+    .qualifications-img {
+        max-width: unset;
+        width: 100%;
+    }
+}

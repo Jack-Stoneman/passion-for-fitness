@@ -35,13 +35,17 @@
     flex-wrap: wrap;
 }
 
+.section-column.main-text {
+    min-width: 350px;
+}
+
 .prices {
     display: flex;
     gap: 20px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .pricing-container {
@@ -372,8 +376,70 @@ a.top-banner-text:hover {
   }
 
 @media (max-width: 1299px) {
-    .pt-section:has(.section-column.pricing) {
+    .pt-section:has(.section-column.main-text) {
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 768px) {
+    .pt-section.top-banner {
+        width: calc(100% - 25px);
+    }
+    .section-column.top-banner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .prices {
+        flex-wrap: wrap;
+    }
+    .snap-logo.large {
+        width: 300px;
+    }
+    .top-banner-text {
+        text-align: center;
+    }
+    .top-banner-text.title {
+        font-size: 24px;
+    }
+    .top-banner-text.sub-title {
+        font-size: 20px;
+    }
+
+    .slides .slide {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .guideline-card {
+        overflow: auto;
+        border-radius: 25px;
+    }
+
+    #personalTraining .slides {
+        border-radius: 25px;
+    }
+
+    #personalTraining .carousel .arrow {
+        right: -20px;
+    }
+
+    #personalTraining .carousel .arrow.prev {
+        left: -20px;
+    }
+
+    .snap-location {
+        height: 100%;
+    }
+    
+    .location-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .training-image, .faq {
+        max-width: calc(100vw - 20px);
+    }
+    
 }
 

@@ -66,7 +66,7 @@ function Contact() {
                   required
                 />
                 <label for="user_gender">Gender</label>
-                <div class="genderOptions">
+                <div className="genderOptions">
                   <div className="gender">
                     <label for="gender_male">Male</label>
                     <input type="radio" name="user_gender" id="gender_male" />
