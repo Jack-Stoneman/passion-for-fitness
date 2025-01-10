@@ -1,6 +1,6 @@
 #contact {
     flex-direction: column;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
 }
 
 .contact-wrapper {
@@ -173,6 +173,14 @@ select option, select optgroup {
 .enquiry-form-wrapper .sub-header {
     margin-bottom: 0;
     max-width: 400px;
+}
+
+.footer {
+    background: var(--central-blue);
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    padding: 20px 10px 60px;
 }
 
 @media (max-width: 1200px) {

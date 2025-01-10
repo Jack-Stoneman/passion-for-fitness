@@ -46,7 +46,9 @@ function Contact() {
       <div className="section-header">CONTACT</div>
       <div className="contact-wrapper">
         <div className="enquiry-form-wrapper">
-          <div className="sub-header">GENERAL ENQUIRIES / BOOKING FORM</div>
+          <div className="sub-header">
+            GENERAL ENQUIRIES/<br></br>BOOKING FORM
+          </div>
           <div className="contact-form">
             <div className="form-wrapper">
               <form ref={form} onSubmit={sendEmail}>
@@ -129,6 +131,10 @@ function Contact() {
               }}
             />
           </div>
+        </div>
+        <div className="footer">
+          {"\u00a9"} {new Date().getFullYear()} Passion For Fitness NZ. All
+          Rights Reserved.
         </div>
       </div>
     </div>

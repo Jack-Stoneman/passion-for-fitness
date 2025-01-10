@@ -109,20 +109,27 @@
 .price {
     background: var(--snap-red);
     color: white;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     box-shadow: rgba(141, 130, 130, 0.35) 0px 5px 15px;
+    padding: 10px;
+    text-align: center;
 }
 
 .price .amount {
     font-size: 24px;
     font-weight: 600;
 }
+
+.amount-note {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
 .welcome-list.light li {
     font-size: 20px;
 }
@@ -443,6 +450,10 @@ a.top-banner-text:hover {
 
     .pt-carousel-wrapper {
         width: 100%;
+    }
+
+    .guideline-image-wrapper {
+        display: none;
     }
     
 }

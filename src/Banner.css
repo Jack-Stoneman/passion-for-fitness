@@ -24,6 +24,7 @@
     font-weight: bold;
     color: #fff;
     line-height: 50px;
+    max-width: unset;
 }
 
 .scrolling.pause {
@@ -45,4 +46,11 @@ from {
 to { 
     transform: translateX(-100%);
 }
+}
+
+@media (max-width: 768px) {
+    .scrolling {
+        font-size: 12px;
+        line-height: 30px;
+    }
 }

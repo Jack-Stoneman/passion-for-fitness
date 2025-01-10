@@ -54,8 +54,12 @@
 }
 
 .welcome-message {
-    font-size: 28px;
+    font-size: 20px;
     max-width: 1200px;
+}
+
+.welcome-message ul {
+    margin: 0;
 }
 
 .content-wrapper {
@@ -69,6 +73,8 @@
     height: 800px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .welcome-header {
@@ -83,12 +89,12 @@
 }
 
 .welcome-points {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1vw;
     padding: 20px 0px;
     border-top: 2px solid #fff;
@@ -102,11 +108,11 @@
 }
 
 .welcome-point-text {
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .welcome-dumbell {
-    height: 40px;
+    height: 30px;
     width: 20px;
     background: url("../media/dumbell.svg") no-repeat center center;
     background-size: contain;

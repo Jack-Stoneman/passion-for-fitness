@@ -136,7 +136,7 @@ code {
   height: 30px;
   right: 0px;
   top: calc(50% - 15px);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.6);
   background-image: url("../media/arrow.svg");
   background-position: calc(50% + 2px) 50%;;
   background-size: 70%;

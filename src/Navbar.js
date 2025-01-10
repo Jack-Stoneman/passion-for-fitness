@@ -7,7 +7,7 @@ function Navbar() {
 
   const handleClick = () => {
     setOpen(!open);
-  }
+  };
 
   return (
     <div className="navbar">
@@ -15,13 +15,19 @@ function Navbar() {
         <a className="navbar-title" href="#welcome">
           Passion For Fitness NZ
         </a>
-        <div className={`hamburger-icon ${open ? "open": ""}`} onClick={handleClick}>
+        <div
+          className={`hamburger-icon ${open ? "open" : ""}`}
+          onClick={handleClick}
+        >
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div className={`navbar-links ${open ? "open": ""}`}>
-          <img className="mobile-navbar-logo" src={logo}/>
+        <div
+          className={`navbar-links ${open ? "open" : ""}`}
+          onClick={handleClick}
+        >
+          <img className="mobile-navbar-logo" src={logo} />
           <a href="#specialisation" className="link-header">
             Specialisation
           </a>
@@ -38,7 +44,7 @@ function Navbar() {
               <a href="#onlineTraining">Online Training</a>
             </div>
           </div>
-          <a href="#welcome" className="link-header">
+          <a href="#testimonials" className="link-header">
             Testimonials
           </a>
           <a href="#contact" className="link-header">

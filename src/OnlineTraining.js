@@ -6,7 +6,7 @@ const packages = [
   {
     title: "Starter",
     imgSrc: startPhoto,
-    price: 29,
+    price: 25,
     features: [
       "Customised workout program",
       "Monthly progress review",
@@ -19,10 +19,10 @@ const packages = [
   {
     title: "Premium",
     imgSrc: premiumPhoto,
-    price: 49,
+    price: 39,
     features: [
       "Customised workout program",
-      "Fortnightly progress review",
+      "Weekly progress review",
       "Personalised nutrition plan",
       "Video/WhatsApp call support",
       "Free App access for all exercise videos",
@@ -36,11 +36,9 @@ function OnlineTraining() {
   return (
     <div id="onlineTraining" className="section">
       <div className="section-header">ONLINE TRAINING</div>
-      <div className="book-now">
-        <button href="#contact" className="hover-button red">
-          <span className="text">Book now!</span>
-        </button>
-      </div>
+      <a href="#contact" className="book-now">
+        Book now!
+      </a>
       <div className="online-packages">
         <div className="package">
           <div className="card">

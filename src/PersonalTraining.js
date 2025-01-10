@@ -42,7 +42,7 @@ const faq = [
 const pricing = [
   {
     type: "Members",
-    price: 79,
+    price: 75,
     points: [
       "Minimum 2 sessions/week*",
       "60 mins per session",
@@ -173,7 +173,9 @@ function PersonalTraining() {
   };
   return (
     <div id="personalTraining" className="section blue">
-      <div className="section-header">1:1 IN-PERSON TRAINING</div>
+      <div className="section-header">
+        In-Person Training (1:1 and 2:1 Sessions)
+      </div>
       <div className="header-logo">
         <img src={snap_logo_white} className="snap-logo large" />
         <div className="branch">Hornby</div>
@@ -226,7 +228,10 @@ function PersonalTraining() {
               <div className="pricing-container">
                 <div className="price-wrapper">
                   <div className="price">
-                    <span className="amount">${price["price"]}/</span>session
+                    <span className="amount">
+                      <span className="amount-note">Starting from</span>$
+                      {price["price"]}/session
+                    </span>
                   </div>
                 </div>
                 <ul className="pricing-points">
@@ -235,7 +240,11 @@ function PersonalTraining() {
                     <li>{point}</li>
                   ))}
                 </ul>
+
                 <img src={snap_logo} className="snap-logo" />
+                <div className="price">
+                  10% off your first month; Further 5% off referrals
+                </div>
               </div>
             ))}
           </div>

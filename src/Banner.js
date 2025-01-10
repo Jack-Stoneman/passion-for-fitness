@@ -20,20 +20,30 @@ function Banner() {
           onMouseEnter={pauseBanner}
           onMouseLeave={playBanner}
         >
-          🚨Spots still available for our summer 1:1 Body Transformation
-          Program at SnapFitness 24/7 in Hornby, Christchurch. Enjoy
-          personalised workouts (Cardio + Weights + Boxfit + HIIT) for fat loss,
-          muscle gain, core strength and mobility. <a href="#contact" className="enquiry-link">Enquire now!</a>🚨
+          🚨Join our 12-week 1:1 Body Transformation program @ Snap Fitness 24/7
+          in Hornby, Christchurch; Non-members get full access gym membership
+          with no joining fee for 12 weeks; Enjoy personalised programs (Weights
+          + Cardio + Boxfit + HIIT) for fat loss, muscle gain, core strength &
+          mobility. Starting from $75 per session.
+          <a href="#contact" className="enquiry-link">
+            Enquire now!
+          </a>
+          🚨
         </div>
         <div
           className={`scrolling ${pause ? "pause" : ""}`}
           onMouseEnter={pauseBanner}
           onMouseLeave={playBanner}
         >
-          🚨Spots still available for our summer 1:1 Body Transformation
-          Program at SnapFitness 24/7 in Hornby, Christchurch. Enjoy
-          personalised workouts (Cardio + Weights + Boxfit + HIIT) for fat loss,
-          muscle gain, core strength and mobility. <a href="#contact" className="enquiry-link">Enquire now!</a>🚨
+          🚨Join our 12-week 1:1 Body Transformation program @ Snap Fitness 24/7
+          in Hornby, Christchurch; Non-members get full access gym membership
+          with no joining fee for 12 weeks; Enjoy personalised programs (Weights
+          + Cardio + Boxfit + HIIT) for fat loss, muscle gain, core strength &
+          mobility. Starting from $75 per session.
+          <a href="#contact" className="enquiry-link">
+            Enquire now!
+          </a>
+          🚨
         </div>
       </div>
     </div>

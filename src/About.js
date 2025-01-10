@@ -12,23 +12,17 @@ import { useTransition } from "react";
 import Gallery from "./Gallery";
 import dumbell from "./assets/dumbell.svg";
 
-const initialText = `Hi! I’m Ramesh and am a qualified personal trainer and fitness
-                     leader based in Christchurch, New Zealand. I currently provide
-                     in-person training and remote coaching to individuals across
-                     different countries and time zones. Fitness has truly been my
-                     passion for more than 20 years and the biggest satisfaction for
-                     me is in helping others embark on a sustainable fitness journey
-                     to lose weight, gain muscle, improve their health, feel better
-                     or any other fitness goals.`,
+const initialText = `Hi! I'm Ramesh and I'm a qualified personal trainer and fitness leader based in Christchurch, New Zealand. 
+                      I provide 1:1 gym training, 2:1 sessions plus nutrition and online coaching to individuals in 
+                      NZ, Australia and other countries.  Fitness has truly been my passion for more than 25 years and 
+                      the biggest satisfaction for me is in helping others embark on a sustainable fitness journey to lose 
+                      weight, gain muscle, improve their health, feel fitter and eat better.`,
   furtherText = [
-    `Hi! I’m Ramesh and am a qualified personal trainer and fitness
-                     leader based in Christchurch, New Zealand. I currently provide
-                     in-person training and remote coaching to individuals across
-                     different countries and time zones. Fitness has truly been my
-                     passion for more than 20 years and the biggest satisfaction for
-                     me is in helping others embark on a sustainable fitness journey
-                     to lose weight, gain muscle, improve their health, feel better
-                     or any other fitness goals.`,
+    `Hi! I'm Ramesh and I'm a qualified personal trainer and fitness leader based in Christchurch, New Zealand. 
+                I provide 1:1 gym training, 2:1 sessions plus nutrition and online coaching to individuals in 
+                NZ, Australia and other countries.  Fitness has truly been my passion for more than 25 years and 
+                the biggest satisfaction for me is in helping others embark on a sustainable fitness journey to lose 
+                weight, gain muscle, improve their health, feel fitter and eat better.`,
     `I’ve been a fitness and sports enthusiast all my life and have dedicated
                 many years to strength training, high-altitude trekking,
                 mountaineering and living a fit and healthy lifestyle. I spent 3

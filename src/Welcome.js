@@ -90,7 +90,7 @@ function Welcome() {
               <div className="welcome-point">
                 <span className="welcome-dumbell"></span>
                 <span className="welcome-point-text">
-                  1:1 Personal Training & Boxfit (Christchurch)
+                  1:1 & 2:1 Personal Training + Boxfit (Christchurch)
                 </span>
               </div>
               <div className="welcome-point">
@@ -119,9 +119,26 @@ function Welcome() {
             achieve the results you're looking for. My sessions have a strong
             focus on performing exercises with the correct form and technique to
             optimise muscle growth and minimise the risk of injury.
+            <br /> <br />
+            To date, several of my clients have achieved amazing body
+            transformation results within 3-4 months of training with me. Recent
+            client stats:
+            <ul>
+              <li>8-10 cm reduction in waistline</li>
+              <li>4-5% drop in percentage body fat</li>
+              <li>5-6% increase in lean muscle mass (arms & legs)</li>
+              <li>25-30% increase in daily protein consumption</li>
+            </ul>
           </div>
         </div>
-        <video className="welcome-video" autoPlay muted loop controls>
+        <video
+          className="welcome-video"
+          autoPlay
+          muted
+          loop
+          controls
+          playsInline
+        >
           <source src={welcomeVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
