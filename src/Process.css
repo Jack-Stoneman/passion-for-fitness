@@ -148,26 +148,18 @@
 }
 
 @media (max-width: 850px) {
+    .slides {
+        height: 1000px;
+    }
+
     .slide-content {
-        position: relative;
         height: 100%;
-        overflow: hidden;
-        border-radius: 25px;
-        text-shadow: 0px 0px 3px #000;
+        flex-direction: column-reverse;
     }
 
-    .slide-content img {
-        position: absolute;
-        top:0;
-        left: 0;
+    .slide-content span  {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.4);
-    }
-
-    .triangle-cutoff {
-        display: none;
+        box-sizing: border-box;
     }
 }
 

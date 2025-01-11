@@ -50,9 +50,9 @@
 
 .card-img {
     width: 100%;
-    aspect-ratio: 12/16;
+    height: 100%;
     object-fit: cover;
-    filter: brightness(0.4);
+    filter: brightness(0.7);
 }
 
 .features {
@@ -113,6 +113,10 @@
     transition: transform 0.5s ease-in-out;
 }
 
+.package:nth-child(2) .card-img {
+    filter: opacity(0.6);
+}
+
 .book-now:hover {
     transform: scale(1.1);
 }
@@ -127,7 +131,7 @@
     }
 
     .features {
-        font-size: 5.5vw;
+        font-size: min(5.5vw, 24px);
     }
 
 }
