@@ -84,6 +84,21 @@
     display: none;
 }
 
+@media (max-width: 1300px) and (min-width: 1025px) {
+    .inner-wrapper {
+        gap: 10px;
+    }
+
+    .navbar-title {
+        font-size: 2vw;
+    }
+
+    .link-header {
+        padding: 0px 10px;
+        font-size: 1.5vw;
+    }
+}
+
 @media (max-width: 1024px) {
     .navbar-links {
         position: fixed;
