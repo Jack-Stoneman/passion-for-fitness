@@ -47,7 +47,7 @@ const pricing = [
       "Minimum 2 sessions/week*",
       "60 mins per session",
       "Full package & coaching support",
-      "Full 24/7 access to our Hornby gym",
+      "Sessions held Mon-Sat @ Hornby",
     ],
   },
   {
