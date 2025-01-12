@@ -1,11 +1,10 @@
 import "./About.css";
 import photo1 from "./assets/gym-photos/DSC01257.jpg";
-import photo2 from "./assets/gym-photos/DSC00707.jpg";
-import photo3 from "./assets/gym-photos/DSC00699.jpg";
-import photo4 from "./assets/gym-photos/DSC00822.jpg";
-import photo5 from "./assets/gym-photos/DSC00634.jpg";
-import photo6 from "./assets/gym-photos/IMG_8453.jpg";
-import photo7 from "./assets/gym-photos/IMG_8407.jpg";
+import photo2 from "./assets/gym-photos/IMG_8451.jpg";
+import photo3 from "./assets/gym-photos/DSC00707.jpg";
+import photo4 from "./assets/gym-photos/DSC00699.jpg";
+import photo5 from "./assets/gym-photos/IMG_8453.jpg";
+import photo6 from "./assets/gym-photos/IMG_8407.jpg";
 import extraPhoto from "./assets/gym-photos/DSC00805.jpg";
 import { useState } from "react";
 import { useTransition } from "react";
@@ -75,7 +74,7 @@ function About() {
       <div className="section-header">ABOUT ME</div>
       <div className="about-content">
         <Gallery
-          images={[photo1, photo2, photo3, photo4, photo5, photo6, photo7]}
+          images={[photo1, photo2, photo3, photo4, photo5, photo6]}
           interval={3000}
           width={500}
           height={750}

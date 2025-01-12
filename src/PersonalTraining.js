@@ -9,7 +9,7 @@ import tape from "./assets/weight-loss.svg";
 import muscle from "./assets/strength.svg";
 import hornby from "./assets/Hornby.png";
 import barrington from "./assets/Barrington.png";
-import papanui from "./assets/Papanui.png";
+import papanui from "./assets/hornby2.png";
 import extra_photo from "./assets/gym-photos/DSC01031.jpg";
 
 const faq = [

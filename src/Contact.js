@@ -50,6 +50,12 @@ function Contact() {
             GENERAL ENQUIRIES/<br></br>BOOKING FORM
           </div>
           <div className="contact-form">
+            <div className="feedback">
+              <div className="modal">
+                Submission complete. Thanks!
+                <button className="hover-button">Close</button>
+              </div>
+            </div>
             <div className="form-wrapper">
               <form ref={form} onSubmit={sendEmail}>
                 <label for="user_name">Name</label>
@@ -123,13 +129,7 @@ function Contact() {
         <div className="calendar-content-wrapper">
           <div className="calendar-title sub-header">BOOK A CALL</div>
           <div className="calendly-wrapper">
-            <InlineWidget
-              url="https://calendly.com/jestoneman/30min"
-              pageSettings={{
-                backgroundColor: "#002e57",
-                textColor: "#ffffff",
-              }}
-            />
+            <InlineWidget url="https://calendly.com/passionforfitness-nz/30min" />
           </div>
         </div>
         <div className="footer">

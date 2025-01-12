@@ -6,6 +6,8 @@
 .contact-wrapper {
     display: flex;
     gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-form {
@@ -16,7 +18,7 @@
     background: var(--central-blue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: #fff;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .form-wrapper {
@@ -183,6 +185,33 @@ select option, select optgroup {
     padding: 20px 10px 60px;
 }
 
+.feedback {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback .modal {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 25px;
+    color: #000;
+    text-align: center;
+}
+
+.feedback.visible {
+    display: flex;
+}
+
 @media (max-width: 1200px) {
     .contact-wrapper {
         flex-direction: column;
@@ -216,6 +245,7 @@ select option, select optgroup {
 
     .contact-form {
         height: auto;
+        box-sizing: border-box;
     }
 
     #contact .icons-wrapper {

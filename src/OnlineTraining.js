@@ -42,13 +42,8 @@ function OnlineTraining() {
       <div className="online-packages">
         <div className="package">
           <div className="card">
-            <div className="price-badge">
-              <div className="price-badge-text">
-                ${packages[0].price}
-                <br></br>/wk
-              </div>
-            </div>
             <div className="card-header">{packages[0].title}</div>
+            <div className="card-price">From ${packages[0].price}/wk</div>
             <div className="card-img-wrapper">
               <img className="card-img" src={packages[0].imgSrc}></img>
             </div>
@@ -62,13 +57,8 @@ function OnlineTraining() {
         </div>
         <div className="package">
           <div className="card">
-            <div className="price-badge">
-              <div className="price-badge-text">
-                ${packages[1].price}
-                <br></br>/wk
-              </div>
-            </div>
             <div className="card-header">{packages[1].title}</div>
+            <div className="card-price">From ${packages[1].price}/wk</div>
             <div className="card-img-wrapper">
               <img className="card-img" src={packages[1].imgSrc}></img>
             </div>

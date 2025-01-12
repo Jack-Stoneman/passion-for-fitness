@@ -177,4 +177,8 @@
     .welcome-message {
         font-size: 4vw;
     }
+
+    .welcome-point {
+        gap: 1.5vw;
+    }
 }
