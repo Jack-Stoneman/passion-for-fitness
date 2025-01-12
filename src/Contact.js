@@ -50,10 +50,12 @@ function Contact() {
             GENERAL ENQUIRIES/<br></br>BOOKING FORM
           </div>
           <div className="contact-form">
-            <div className="feedback">
+            <div className={`feedback ${isOpen ? "visible" : ""}`}>
               <div className="modal">
-                Submission complete. Thanks!
-                <button className="hover-button">Close</button>
+                {modalMessage}
+                <button className="hover-button" onClick={() => setIsOpen(false)}>
+                  <span className="text">Close</span>
+                </button>
               </div>
             </div>
             <div className="form-wrapper">

@@ -195,6 +195,7 @@ select option, select optgroup {
     background: rgba(0, 0, 0, 0.35);
     justify-content: center;
     align-items: center;
+    padding: 0px 20px;
 }
 
 .feedback .modal {
@@ -216,10 +217,7 @@ select option, select optgroup {
     .contact-wrapper {
         flex-direction: column;
         align-items: center;
-    }
-
-    .middle-divider {
-        width: 100%;
+        flex-wrap: nowrap;
     }
 
     .icons-wrapper {
@@ -229,9 +227,13 @@ select option, select optgroup {
     }
 
     .sub-header {
-        font-size: 6.5vw;
+        font-size: 5.5vw;
         text-align: center;
         margin: 0;
+    }
+
+    .enquiry-form-wrapper .sub-header {
+        max-width: unset;
     }
 
     .enquiry-form-wrapper {
