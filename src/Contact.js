@@ -60,14 +60,14 @@ function Contact() {
             </div>
             <div className="form-wrapper">
               <form ref={form} onSubmit={sendEmail}>
-                <label for="user_name">Name</label>
+                <label htmlFor="user_name">Name</label>
                 <input
                   type="text"
                   name="user_name"
                   placeholder="Enter your name"
                   required
                 />
-                <label for="user_email">Email</label>
+                <label htmlFor="user_email">Email</label>
                 <input
                   type="email"
                   name="user_email"
@@ -75,30 +75,30 @@ function Contact() {
                   pattern="\[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   required
                 />
-                <label for="user_gender">Gender</label>
+                <label htmlFor="user_gender">Gender</label>
                 <div className="genderOptions">
                   <div className="gender">
-                    <label for="gender_male">Male</label>
+                    <label htmlFor="gender_male">Male</label>
                     <input type="radio" name="user_gender" id="gender_male" />
                   </div>
                   <div className="gender">
-                    <label for="gender_female">Female</label>
+                    <label htmlFor="gender_female">Female</label>
                     <input type="radio" name="user_gender" id="gender_female" />
                   </div>
                   <div className="gender">
-                    <label for="gender_other">Other</label>
+                    <label htmlFor="gender_other">Other</label>
                     <input type="radio" name="user_gender" id="gender_other" />
                   </div>
                 </div>
-                <label for="user_phone">Phone</label>
+                <label htmlFor="user_phone">Phone</label>
                 <input
                   type="tel"
                   name="user_phone"
                   placeholder="Enter your phone number (optional)"
                 />
-                <label for="user_country">Country</label>
+                <label htmlFor="user_country">Country</label>
                 {countryDropdown}
-                <label for="message">What is your enquiry?</label>
+                <label htmlFor="message">What is your enquiry?</label>
                 <textarea
                   name="message"
                   placeholder="Enter your question"
@@ -147,7 +147,7 @@ export default Contact;
 
 let countryDropdown = (
   <select name="user_country">
-    <option value="0" label="Select a country ... " selected="selected">
+    <option value="0" label="Select a country ... " value="selected">
       Select a country ...
     </option>
     <optgroup id="country-optgroup-Africa" label="Africa">

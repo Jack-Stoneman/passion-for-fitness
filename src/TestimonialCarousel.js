@@ -54,7 +54,7 @@ function TestimonialCarousel() {
 
   return (
     <div id="testimonials" className="section blue">
-      <div className="section-header">TESTIMONIALS</div>
+      <h1 className="section-header">TESTIMONIALS</h1>
       <div
         className="carousel-wrapper"
         style={{ maxWidth: `${maxWidth + 500}px` }}
