@@ -35,7 +35,7 @@ const packages = [
 function OnlineTraining() {
   return (
     <div id="onlineTraining" className="section">
-      <div className="section-header">ONLINE TRAINING</div>
+      <h1 className="section-header">ONLINE TRAINING</h1>
       <a href="#contact" className="book-now">
         Book now!
       </a>

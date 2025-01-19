@@ -173,9 +173,9 @@ function PersonalTraining() {
   };
   return (
     <div id="personalTraining" className="section blue">
-      <div className="section-header">
+      <h1 className="section-header">
         In-Person Training (1:1 and 2:1 Sessions)
-      </div>
+      </h1>
       <div className="header-logo">
         <img src={snap_logo_white} className="snap-logo large" />
         <div className="branch">Hornby</div>

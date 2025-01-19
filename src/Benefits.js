@@ -3,7 +3,7 @@ import "./Benefits.css";
 function Benefits() {
   return (
     <div id="benefits" className="section blue">
-      <div className="section-header">BENEFITS OF PERSONAL TRAINING</div>
+      <h1 className="section-header">BENEFITS OF PERSONAL TRAINING</h1>
       <ul className="benefits-list">
         <li>1:1 training sessions</li>
         <li>Customised workouts and exercise selection</li>

@@ -71,7 +71,7 @@ function About() {
 
   return (
     <div id="about" className="section">
-      <div className="section-header">ABOUT ME</div>
+      <h1 lassName="section-header">ABOUT ME</h1>
       <div className="about-content">
         <Gallery
           images={[photo1, photo2, photo3, photo4, photo5, photo6]}
@@ -118,7 +118,7 @@ function About() {
             <img src={dumbell} className="banner-dumbell"></img>
             <div className="horizontal-line"></div>
           </div>
-          <div className="section-header">Qualifications</div>
+          <h1 className="section-header">Qualifications</h1>
           <div className="qualifications-content">
             <ul className="welcome-list">
               <li>
