@@ -79,7 +79,7 @@ function Welcome() {
           <div className="welcome-header">
             <span className="logo" />
             <div className="welcome-header-text">
-              <h1 className="welcome-title">Your Journey, My Passion</h1>
+              <div className="welcome-title">Your Journey, My Passion</div>
               <div className="welcome-subtitle">
                 Welcome to passionforfitness.net
               </div>
@@ -89,21 +89,21 @@ function Welcome() {
             <div className="welcome-points">
               <div className="welcome-point">
                 <span className="welcome-dumbell"></span>
-                <span className="welcome-point-text">
+                <h1 className="welcome-point-text">
                   1:1 & 2:1 Personal Training + Boxfit (Christchurch)
-                </span>
+                </h1>
               </div>
               <div className="welcome-point">
                 <span className="welcome-dumbell"></span>
-                <span className="welcome-point-text">
+                <h2 className="welcome-point-text">
                   Online Fitness & Lifestyle Coaching
-                </span>
+                </h2>
               </div>
               <div className="welcome-point">
                 <span className="welcome-dumbell"></span>
-                <span className="welcome-point-text">
+                <h3 className="welcome-point-text">
                   Nutrition Support & Guidance
-                </span>
+                </h3>
               </div>
             </div>
             If you’re serious about achieving your health and fitness goals and

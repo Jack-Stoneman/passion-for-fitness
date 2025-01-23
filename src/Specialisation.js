@@ -69,7 +69,7 @@ function Specialisation() {
 
   return (
     <div id="specialisation" className="section">
-      <h1 className="section-header">Areas of Specialty</h1>
+      <div className="section-header">Areas of Specialty</div>
       <div className="introduction-grid">
         <div className="grid-wrapper">
           {Object.entries(content).map(([key, value]) => (

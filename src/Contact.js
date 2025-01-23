@@ -43,7 +43,7 @@ function Contact() {
 
   return (
     <div id="contact" className="section">
-      <h1 className="section-header">CONTACT</h1>
+      <div className="section-header">CONTACT</div>
       <div className="contact-wrapper">
         <div className="enquiry-form-wrapper">
           <div className="sub-header">
@@ -53,7 +53,10 @@ function Contact() {
             <div className={`feedback ${isOpen ? "visible" : ""}`}>
               <div className="modal">
                 {modalMessage}
-                <button className="hover-button" onClick={() => setIsOpen(false)}>
+                <button
+                  className="hover-button"
+                  onClick={() => setIsOpen(false)}
+                >
                   <span className="text">Close</span>
                 </button>
               </div>
