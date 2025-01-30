@@ -71,7 +71,7 @@ function About() {
 
   return (
     <div id="about" className="section">
-      <div lassName="section-header">ABOUT ME</div>
+      <div className="section-header">ABOUT ME</div>
       <div className="about-content">
         <Gallery
           images={[photo1, photo2, photo3, photo4, photo5, photo6]}
